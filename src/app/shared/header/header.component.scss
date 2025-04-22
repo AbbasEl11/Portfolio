@@ -1,0 +1,179 @@
+header{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background: transparent;
+    font-family: "Bricolage Grotesque";
+}
+
+.header-logo{
+    display: flex;
+    position: relative;
+    >img{
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.nav-bar{
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    width: 65%;
+    margin-top: -15px;
+    >a{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        font-size: 18px;
+    }
+}
+
+.toggle-translator{
+    display: flex;
+    width: 100%;
+}
+
+.cl-toggle-switch {
+    position: relative;
+    margin-top: -15px;
+}
+
+.cl-switch {
+    position: relative;
+    display: inline-block;
+    /* label:entfernen => du kannst auch einfach
+       label oder div nehmen, Hauptsache kein "for=..."
+       aufs Input */
+}
+
+/* Input */
+.cl-switch>input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    right: 6px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.38);
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+
+    /* NEU: Keine Klicks mehr auf das Input */
+    pointer-events: none;
+
+    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+
+/* Track */
+.cl-switch>span::before {
+    content: "";
+    display: inline-block;
+    margin: 5px 0 5px 10px;
+    border-radius: 7px;
+    width: 36px;
+    height: 14px;
+    background-color: rgba(0, 0, 0, 0.38);
+    vertical-align: top;
+    transition: background-color 0.2s, opacity 0.2s;
+
+    /* NEU: Keine Klicks auf die „Schiene“ */
+    pointer-events: none;
+}
+
+/* Thumb */
+.cl-switch>span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s, transform 0.2s;
+
+    /* NEU: Der "Punkt" darf klickbar/dragbar sein */
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Checked-Zustände kannst du lassen.
+   Sie werden erst greifen, wenn du per JS
+   das .checked toggelst – per Klick passiert
+   durch pointer-events:none aber nichts mehr. */
+
+.cl-switch>input:checked {
+    right: -10px;
+    background-color: #85b8b7;
+}
+
+.cl-switch>input:checked+span::before {
+    background-color: #85b8b7;
+}
+
+.cl-switch>input:checked+span::after {
+    background-color: #018786;
+    transform: translateX(16px);
+}
+
+/* Hover, Focus, Active usw. wirken auch nur,
+   wenn pointer-events eingeschaltet sind.
+   Du kannst sie optional beibehalten. */
+
+.cl-switch:hover>input {
+    opacity: 0.04;
+}
+
+.cl-switch>input:focus {
+    opacity: 0.12;
+}
+
+.cl-switch:hover>input:focus {
+    opacity: 0.16;
+}
+
+.cl-switch>input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
+.cl-switch>input:active+span::before {
+    background-color: #8f8f8f;
+}
+
+.cl-switch>input:checked:active+span::before {
+    background-color: #85b8b7;
+}
+
+/* Disabled */
+.cl-switch>input:disabled {
+    opacity: 0;
+}
+
+.cl-switch>input:disabled+span::before {
+    background-color: #ddd;
+}
+
+.cl-switch>input:checked:disabled+span::before {
+    background-color: #bfdbda;
+}
+
+.cl-switch>input:checked:disabled+span::after {
+    background-color: #61b5b4;
+}
