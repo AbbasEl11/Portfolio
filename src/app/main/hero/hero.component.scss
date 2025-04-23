@@ -39,27 +39,8 @@
                     >h1 {
                         font-size: 128px;
                         margin-right: 80px;
-                        margin-top: 0px;
+                        margin-top: 10px;
                         }
-                    >.hello-button{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 150px;
-                            height: 40px;
-                            background-color: transparent;
-                            color: #ffffff;
-                            font-size: 18px;
-                            border: solid 1px rgb(248, 248, 248);
-                            border-radius: 50px;
-                            cursor: pointer;
-                            margin-left: 8px;
-                            margin-top: 80px;
-                            &:hover{
-                                content: "I'M ABBAS EL MAHMOUD";
-                                background-color: #3254fc;
-                            }
-                    }
                     
                 }
 }
@@ -93,24 +74,52 @@
             }
 
 }
+}
 
-.social{
+.social {
     display: flex;
     align-self: flex-start;
     flex-direction: column;
     margin-left: 50px;
-        >a{
-            margin-bottom: 5px;
 
-                >img{
-                  width: 50px;  
-                }
+    .fill-up-container {
+        position: relative;
+        border-radius: 50%;
+        width: 40px;
+        overflow: hidden;
+        z-index: 0;
+        margin-bottom: 10px;
+
+        > a {
+            cursor: auto;
+
+                > img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;       /* Startet unten */
+            left: 0;
+            width: 100%;
+            height: 0;       /* Füllhöhe = 0 am Anfang */
+            background-color: #3355ff; 
+            z-index: -1;     /* Hinter dem Bild */
+            transition: height 0.4s ease;
         }
 
-}
+        &:hover::before {
+            height: 100%;
+        }
+    }
 }
 
-.magic-button {
+.animation-button {
+    
     position: relative;
     display: inline-block;
     width: 130px; 
@@ -120,10 +129,11 @@
     background-color: transparent;
     color: #fff;
     font-size: 14px;
-    cursor: pointer; 
+    cursor: auto; 
     overflow: visible;
     transition: width 0.5s ease, background-color 0.5s ease;
-
+    margin-top: 45px; 
+    
     &:hover {
         width: 250px;
         background-color: #3377ff;

@@ -20,17 +20,69 @@ header{
     }
 }
 
-.nav-bar{
+header {
+  .nav-bar {
     display: flex;
-    color: rgb(255, 255, 255);
     justify-content: space-between;
     width: 65%;
     margin-top: -15px;
-    >a{
-        text-decoration: none;
-        color:rgb(255, 255, 255);
-        font-size: 18px;
+
+    > a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+
+      .hover-fill-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.5s ease-in-out;
+        z-index: 0;
+      }
+
+        .hover-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            transition: clip-path 0.5s ease-in-out;
+            z-index: 1;
+      }
+
+      &:hover .hover-fill-top {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      &:hover .hover-fill{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      &.aboutme .hover-fill-top {
+        background-image: url("/assets/icons/aboutme.png");
+      }
+      &.skills .hover-fill {
+        background-image: url("/assets/icons/skills.png");
+      }
+      &.projects .hover-fill {
+        background-image: url("/assets/icons/projects.png");
+      }
+      &.contact .hover-fill {
+        background-image: url("/assets/icons/contact.png");
+      }
     }
+  }
 }
 
 .toggle-translator{
@@ -46,12 +98,8 @@ header{
 .cl-switch {
     position: relative;
     display: inline-block;
-    /* label:entfernen => du kannst auch einfach
-       label oder div nehmen, Hauptsache kein "for=..."
-       aufs Input */
 }
 
-/* Input */
 .cl-switch>input {
     appearance: none;
     -moz-appearance: none;
@@ -69,14 +117,10 @@ header{
     outline: none;
     opacity: 0;
     transform: scale(1);
-
-    /* NEU: Keine Klicks mehr auf das Input */
     pointer-events: none;
-
     transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
 }
 
-/* Track */
 .cl-switch>span::before {
     content: "";
     display: inline-block;
@@ -87,12 +131,9 @@ header{
     background-color: rgba(0, 0, 0, 0.38);
     vertical-align: top;
     transition: background-color 0.2s, opacity 0.2s;
-
-    /* NEU: Keine Klicks auf die „Schiene“ */
     pointer-events: none;
 }
 
-/* Thumb */
 .cl-switch>span::after {
     content: "";
     position: absolute;
@@ -106,16 +147,9 @@ header{
         0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12);
     transition: background-color 0.2s, transform 0.2s;
-
-    /* NEU: Der "Punkt" darf klickbar/dragbar sein */
     pointer-events: auto;
     cursor: pointer;
 }
-
-/* Checked-Zustände kannst du lassen.
-   Sie werden erst greifen, wenn du per JS
-   das .checked toggelst – per Klick passiert
-   durch pointer-events:none aber nichts mehr. */
 
 .cl-switch>input:checked {
     right: -10px;
@@ -130,10 +164,6 @@ header{
     background-color: #018786;
     transform: translateX(16px);
 }
-
-/* Hover, Focus, Active usw. wirken auch nur,
-   wenn pointer-events eingeschaltet sind.
-   Du kannst sie optional beibehalten. */
 
 .cl-switch:hover>input {
     opacity: 0.04;
@@ -161,7 +191,6 @@ header{
     background-color: #85b8b7;
 }
 
-/* Disabled */
 .cl-switch>input:disabled {
     opacity: 0;
 }
