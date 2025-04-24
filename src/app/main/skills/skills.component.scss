@@ -40,6 +40,10 @@
             width: 25%;
             color: white;
             margin-right: 50px;
+            background-image: url(/assets/draws/line_orange.png);
+            background-repeat: no-repeat;
+            background-position: 153px 64px ;
+             animation: animatedBackground 7s linear  infinite ; 
                 >h3{
                 font-size: 20px;
                 align-self: flex-end;
@@ -50,7 +54,16 @@
                 font-size: 64px;
                 align-self: flex-end;
                 }
-        
+@keyframes animatedBackground {
+    0%  {background-position: 153px 64px;} 
+    44% {background-position: 153px 64px;}
+    45% { background-position: 180px 64px; }
+    50% { background-position: 250px 64px; }
+    60% { background-position: 350px 64px; }
+    67% { background-position: 450px 64px; }
+    95%  { background-position: 450px 64px; }
+    100% {background-position: 500px 64px}
+}
         }
 }
 
