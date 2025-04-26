@@ -1,214 +1,292 @@
-.hero-container{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-image: url(/assets/img/background-1.png);
-    background-size: cover;
-    background-position: center bottom;
-    color: white;
+.hero-background-container {
+  width: 100%;
+  background-image: url(/assets/img/background-1.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.hero-section{
+  width: 100%;
+  height: 67vh;
+  max-width: 1680px;
+  margin: 0 auto;
+  align-items: center;
+  font-family: "Bricolage Grotesque";
+
+.hero-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 190px;
+  > h1 {
+    font-size: 120px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 150px;
+    cursor: default;
+
+    > span {
+      display: inline-block;
+      transition: all 0.3s ease;
+
+      &:hover {
+        text-transform: lowercase;
+        color: #f7c518;
+        cursor: default;
+      }
+    }
+  }
+
+  .title-section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: "Bricolage Grotesque";
-}
+    width: 50%;
 
-.hero-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:flex-start;
-    width: 100%;
-        >h1{
-            font-size: 120px;
-            margin: 0;
-            margin-top: 20px;
-            margin-left: 150px;
+    .frontend-section {
+      height: 100px;
+
+      > h1 {
+        font-size: 128px;
+        margin-right: 80px;
+        margin-top: 10px;
+
+        > .other-f:hover {
+          text-transform: lowercase;
+          cursor: default;
         }
 
-    .title-section{
-        display: flex;
-        justify-content: center;
-        width: 50%;  
-            >img {
-                max-width: 200px;
-                transform: rotate(10deg);
-            }
+        > span {
+          transition: text-transform 1s ease;
 
-            .frontend-section {
-                height: 100px;
-                    >h1 {
-                        font-size: 128px;
-                        margin-right: 80px;
-                        margin-top: 10px;
-                        }
-                    
-                }
+          &:hover {
+            text-transform: uppercase;
+            color: #f7c518;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
 }
 
-.btn-GIT{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-        >.touch-button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 180px;
-                height: 40px;
-                background-color: transparent;
-                color: #ffffff;
-                font-size: 19px;
-                padding: 1rem 2rem;
-                border: solid 1px rgb(248, 248, 248);
-                outline: none;
-                border-radius: 50px;
-                cursor: pointer;
-                transform: translateY(-4px) translateX(-4px);
-                box-shadow: 2px 4px 1px 0px #f5f6f7;
-                transition: transform 0.15s ease, box-shadow 0.15s ease;
-                    &:hover{
-                            transform: translateY(0);
-                            box-shadow: 0 0 0 0 #f5f6f7;
-                            background-color: #f87a55;
-                    }
-            }
+.dev-pic {
+  display: flex;
+  position: relative;
 
+  > img {
+    max-width: 200px;
+    transform: rotate(10deg);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+
+  > .visible-text {
+    position: relative;
+    top: 195px;
+    left: -162px;
+    width: 100px;
+    height: 10px;
+    font-size: 24px;
+    transform: rotate(10deg);
+    color: black;
+    font-family: "Kalam";
+
+    &::before {
+      content: "Abbas :)";
+      position: absolute;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    &::after {
+      content: "Abbas :D";
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &:hover {
+    .visible-text::before {
+      opacity: 0;
+    }
+    .visible-text::after {
+      opacity: 1;
+    }
+  }
+}
+
+.btn-GIT {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+
+  > .touch-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 19px;
+    padding: 1rem 2rem;
+    border: solid 1px rgb(248, 248, 248);
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: translateY(-4px) translateX(-4px);
+    box-shadow: 2px 4px 1px 0px #f5f6f7;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(0);
+      box-shadow: 0 0 0 0 #f5f6f7;
+      background-color: #f87a55;
+    }
+  }
+}
+
+
+.animation-button {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  cursor: auto;
+  overflow: visible;
+  transition: width 0.5s ease, background-color 0.5s ease;
+  margin-top: 45px;
+
+  &:hover {
+    width: 250px;
+    background-color: #3377ff;
+  }
+
+  .text-short,
+  .text-long {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-weight: bold;
+    margin: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .text-short {
+    opacity: 1;
+  }
+
+  .text-long {
+    opacity: 0;
+  }
+
+  &:hover {
+    .text-short {
+      opacity: 0;
+    }
+
+    .text-long {
+      opacity: 1;
+    }
+  }
+
+  .hand-wave {
+    position: absolute;
+    top: -50%;
+    left: 80px;
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+    width: 40px;
+    height: auto;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &:hover .hand-wave {
+    animation: waveForward 0.5s forwards ease;
+    transition: opacity 0.5s;
+    opacity: 1;
+  }
+
+  &:not(:hover) .hand-wave {
+    animation: waveBackward 0.5s backwards ease;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+}
+
+@keyframes waveForward {
+  0% {
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(130px) rotate(360deg);
+  }
+}
+
+@keyframes waveBackward {
+  0% {
+    transform: translateY(-50%) translateX(130px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+  }
 }
 }
 
 .social {
-    display: flex;
-    align-self: flex-start;
-    flex-direction: column;
-    margin-left: 50px;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  margin-left: 70px;
+  height: 272px;
 
-    .fill-up-container {
-        position: relative;
-        border-radius: 50%;
-        width: 40px;
-        overflow: hidden;
-        z-index: 0;
-        margin-bottom: 10px;
-
-        > a {
-            cursor: auto;
-
-                > img {
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-        }
-    
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0; 
-            left: 0;
-            width: 100%;
-            height: 0;       
-            background-color: #3355ff; 
-            z-index: -1;   
-            transition: height 0.4s ease;
-        }
-
-        &:hover::before {
-            height: 100%;
-        }
-    }
-}
-
-.animation-button {
-    
+  .fill-up-container {
     position: relative;
-    display: inline-block;
-    width: 130px; 
-    height: 45px;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 14px;
-    cursor: auto; 
-    overflow: visible;
-    transition: width 0.5s ease, background-color 0.5s ease;
-    margin-top: 45px; 
-    
-    &:hover {
-        width: 250px;
-        background-color: #3377ff;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 10px;
+
+    > a {
+      cursor: auto;
+
+      > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
 
-    .text-short,
-    .text-long {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-        font-weight: bold;
-        margin: 0;
-        transition: opacity 0.3s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: #3355ff;
+      z-index: -1;
+      transition: height 0.4s ease;
     }
 
-    .text-short {
-        opacity: 1;
+    &:hover::before {
+      height: 100%;
     }
-
-    .text-long {
-        opacity: 0;
-    }
-
-    &:hover {
-        .text-short {
-            opacity: 0;
-        }
-
-        .text-long {
-            opacity: 1;
-        }
-    }
-
-    .hand-wave {
-        position: absolute;
-        top: -50%;
-        left: 80px; 
-        transform: translateY(-50%) translateX(0) rotate(0deg);
-        width: 40px; 
-        height: auto;
-        opacity: 0; 
-        z-index: 2; 
-        pointer-events: none;
-    }
-    &:hover .hand-wave {
-        animation: waveForward 0.5s forwards ease;
-        transition: opacity 0.5s;
-        opacity: 1;
-    }
-
-    &:not(:hover) .hand-wave {
-        animation: waveBackward 0.5s backwards ease;
-        transition: opacity 0.5s;
-        opacity: 0;
-    }
-}
-
-@keyframes waveForward {
-    0% {
-        transform: translateY(-50%) translateX(0) rotate(0deg);
-    }
-
-    100% {
-        transform: translateY(-50%) translateX(130px) rotate(360deg);
-    }
-}
-
-@keyframes waveBackward {
-    0% {
-        transform: translateY(-50%) translateX(130px) rotate(360deg);
-    }
-
-    100% {
-        transform: translateY(-50%) translateX(0) rotate(0deg);
-    }
+  }
 }

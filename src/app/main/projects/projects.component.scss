@@ -1,0 +1,224 @@
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 80px 320px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 150px;
+
+
+  .projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-left: 0px;
+    width: 560px;
+
+    .projects-header-content {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 64px;
+        margin: 0;
+        padding: 0;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .fill-orange-line {
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 20px;
+        background-image: url(/assets/draws/orange_line.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        z-index: 999;
+        animation: orangeLineAnimation 4s infinite alternate ease-in-out;
+
+        @keyframes orangeLineAnimation {
+          0% {
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          }
+          50% {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          }
+          100% {
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+%project-card-base {
+  height: 400px;
+  width: 560px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+
+  .shadow-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 20%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .project-button {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -80px;
+    right: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    .touch-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 190px;
+      height: 40px;
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 19px;
+      padding: 1rem 2rem;
+      border: solid 1px rgb(248, 248, 248);
+      outline: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transform: translateY(-4px) translateX(-4px);
+      box-shadow: 2px 4px 1px 0px #f5f6f7;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+      &:hover {
+        transform: translateY(0);
+        box-shadow: 0 0 0 0 #f5f6f7;
+        background-color: #f87a55;
+      }
+    }
+  }
+
+  &:hover {
+    .shadow-overlay {
+      opacity: 1;
+    }
+    
+    img {
+      transform: scale(1.1);
+    }
+    
+    .project-button {
+      opacity: 1;
+    }
+  }
+}
+
+.project-top {
+  display: flex;
+  flex-direction: column;
+
+  .project-card {
+    @extend %project-card-base;
+    
+    img {
+      animation: MoveUpDown 3s linear infinite;
+      position: relative;
+      object-fit: contain !important;
+    }
+    &:hover img{
+      transform: scale(1.3) !important;
+      animation: none;
+    }
+  }
+
+  .card-content {
+    text-align: justify;
+    width: 100%;
+    font-size: 18px;
+    padding-top: 30px;
+
+    h3 {
+      padding-bottom: 10px;
+      margin: 0 0 0.5rem;
+      font-size: 24px;
+    }
+
+    p {
+      color: #000000;
+      margin: 0.5rem 0 0;
+    }
+  }
+}
+
+.projects-bottom {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 320px;
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+
+    .project-card {
+      @extend %project-card-base;
+    }
+
+    .card-content {
+      text-align: justify;
+      width: 100%;
+      font-size: 18px;
+      padding-top: 30px;
+
+      h3 {
+        padding-bottom: 10px;
+        margin: 0 0 0.5rem;
+        font-size: 24px;
+      }
+
+      p {
+        color: #000000;
+        margin: 0.5rem 0 0;
+      }
+    }
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% { bottom: 0; }
+  50% { bottom: 50px; }
+}
