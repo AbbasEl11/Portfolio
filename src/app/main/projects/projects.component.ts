@@ -5,13 +5,12 @@ import { Project } from '../../../models/project.model';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { ElpolloComponent } from './elpollo/elpollo.component';
-import { JoinComponent } from './join/join.component';
+
 
 
 @Component({
   selector: 'app-projects',
-  imports: [MatCardModule, MatButtonModule, RouterModule,CommonModule,MatGridListModule,ElpolloComponent,JoinComponent],
+  imports: [MatCardModule, MatButtonModule, RouterModule,CommonModule,MatGridListModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

@@ -1,0 +1,266 @@
+.contact-background {
+  width: 100%;
+  background-image: url(/assets/img/contact-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-section {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  height: 100dvh;
+  font-family: "Bricolage Grotesque";
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+}
+
+.text-content {
+  margin-top: 200px;
+  width: 560px;
+
+  .contact-header {
+    width: 500px;
+
+    > h3 {
+      font-size: 20px;
+    }
+
+    > h1 {
+      margin-top: 0;
+      font-size: 64px;
+      font-weight: 700;
+    }
+
+    > p {
+      font-size: 18px;
+    }
+  }
+
+  .fill-orange-arrow {
+    position: relative;
+    top: 60px;
+    left: 260px;
+    width: 300px;
+    height: 50px;
+    background-image: url(/assets/draws/contact-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 36px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    z-index: 999;
+    animation: orangeLineAnimation 6s infinite alternate ease-in-out;
+
+    @keyframes orangeLineAnimation {
+      0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+      10% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+      20% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+      30% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      40% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      70% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+      80% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+      100% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+    }
+  }
+}
+
+.contact-form {
+  margin-top: 300px;
+  width: 480px;
+
+  .form-group {
+    position: relative;
+    height: 90px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    &:hover {
+      > label {
+        color: rgb(248, 122, 85);
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 0.1px;
+      background-color: rgb(248, 122, 85);
+      transition: background-color 0.3s;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &:first-child::before {
+      background-color: transparent;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: blue;
+      z-index: 2;
+    }
+
+    > label {
+      display: block;
+      margin-bottom: 5px;
+      margin-left: 10px;
+      font-size: 24px;
+    }
+
+    > input,
+    > textarea {
+      width: 95%;
+      padding: 10px;
+      border: none;
+      background: transparent;
+      color: white;
+      font-family: "Bricolage Grotesque";
+      font-size: 18px;
+      resize: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: relative;
+
+    .checkbox-text {
+      user-select: text;
+      font-size: 15px;
+
+      > a {
+        text-decoration: none;
+        color: #0066ff;
+
+        &:hover {
+          color: rgb(248, 122, 85);
+        }
+      }
+    }
+
+    > input[type="checkbox"] {
+      opacity: 0;
+      position: absolute;
+      cursor: pointer;
+      width: 0;
+      height: 0;
+    }
+
+    label {
+      cursor: pointer;
+      padding-left: 40px;
+      position: relative;
+      line-height: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -15px;
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: 2px solid #0066ff;
+        background-color: transparent;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: -14px;
+        width: 16px;
+        height: 16px;
+        background: url(/assets/draws/checkmark.png) no-repeat center center;
+        background-size: contain;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: center;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+    }
+
+    input[type="checkbox"]:checked + label::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    label:hover::before {
+      background-color: rgba(0, 102, 255, 0.39);
+      box-shadow: rgba(0, 102, 255, 0.39) 0px 0px 2px 2px;
+    }
+  }
+
+  .btn-send {
+    width: 95%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    > .send-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 40px;
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 19px;
+      padding: 1rem 2rem;
+      border: solid 1px #ffffff;
+      outline: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transform: translateY(-4px) translateX(-4px);
+      box-shadow: 2px 4px 1px 0px #ffffff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+      &:hover {
+        transform: translateY(0);
+        box-shadow: 0 0 0 0 #f5f6f7;
+        background-color: #f87a55;
+        color: white;
+      }
+    }
+  }
+}
