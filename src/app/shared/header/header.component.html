@@ -1,38 +1,42 @@
-<header>
-    <div class="header-logo">
-        <img src="assets/img/logo-initial.png" alt="">
-    </div>
-    <div class="nav-bar">
-        <a class="aboutme" href="javascript:void(0)" (click)="scrollTo('aboutMeSection')"><span>{{
-                'HEADER.ABOUT_ME_NAV_BAR' | translate }}</span>
-            <div class="hover-fill-top"></div>
-        </a>
-        <a class="skills" href="javascript:void(0)" (click)="scrollTo('skillsSection')"><span>{{ 'HEADER.SKILLS_NAV_BAR'
-                | translate }}</span>
-            <div class="hover-fill"></div>
-        </a>
-        <a class="projects" href="javascript:void(0)" (click)="scrollTo('projectsSection')"><span>{{
-                'HEADER.PROJECTS_NAV_BAR' | translate }}</span>
-            <div class="hover-fill"></div>
-        </a>
-        <a class="contact" href="javascript:void(0)" (click)="scrollTo('contactSection')"><span>{{
-                'HEADER.CONTACT_NAV_BAR' | translate }}</span>
-            <div class="hover-fill"></div>
-        </a>
-    </div>
+<div class="header-container">
+    <header>
+        <div class="header-logo">
+            <img src="assets/img/logo-initial.png" alt="">
+        </div>
+        <div class="nav-bar">
+            <a class="aboutme" href="javascript:void(0)" (click)="scrollTo('aboutMeSection')"><span>{{
+                    'HEADER.ABOUT_ME_NAV_BAR' | translate }}</span>
+                <div class="hover-fill-top"></div>
+            </a>
+            <a class="skills" href="javascript:void(0)" (click)="scrollTo('skillsSection')"><span>{{
+                    'HEADER.SKILLS_NAV_BAR'
+                    | translate }}</span>
+                <div class="hover-fill"></div>
+            </a>
+            <a class="projects" href="javascript:void(0)" (click)="scrollTo('projectsSection')"><span>{{
+                    'HEADER.PROJECTS_NAV_BAR' | translate }}</span>
+                <div class="hover-fill"></div>
+            </a>
+            <a class="contact" href="javascript:void(0)" (click)="scrollTo('contactSection')"><span>{{
+                    'HEADER.CONTACT_NAV_BAR' | translate }}</span>
+                <div class="hover-fill"></div>
+            </a>
+        </div>
 
-    <div class="cl-toggle-switch">
+        <div class="cl-toggle-switch">
 
-        <button (click)="onButtonClick('en')" class="EN" [style.color]="enColor">EN</button>
-        <div class="border-fill-EN"></div>
+            <button (click)="onButtonClick('en')" class="EN" [style.color]="enColor">EN</button>
+            <div class="border-fill-EN"></div>
 
-        <label class="cl-switch">
-            <input type="range" min="0" max="100" [value]="sliderValue" (input)="onSliderInput($event)"
-                (change)="onSliderChange($event)" />
-        </label>
+            <label class="cl-switch">
+                <input type="range" min="0" max="100" [value]="sliderValue" (input)="onSliderInput($event)"
+                    (change)="onSliderChange($event)" />
+            </label>
 
-        <button (click)="onButtonClick('de')" class="DE" [style.color]="deColor">DE</button>
+            <button (click)="onButtonClick('de')" class="DE" [style.color]="deColor">DE</button>
 
-        <div class="border-fill-DE"></div>
-    </div>
-</header>
+            <div class="border-fill-DE"></div>
+        </div>
+    </header>
+
+</div>

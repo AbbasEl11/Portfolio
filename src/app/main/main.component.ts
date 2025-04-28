@@ -7,10 +7,11 @@ import { ColleaguesComponent } from './colleagues/colleagues.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollService } from '../../models/scroll.service';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-main',
-  imports: [RouterModule, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ColleaguesComponent, ContactComponent],
+  imports: [RouterModule, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ColleaguesComponent, ContactComponent,FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

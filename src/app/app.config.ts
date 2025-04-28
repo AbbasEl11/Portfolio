@@ -5,7 +5,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 
-// Loader-Funktion
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/languages/', '.json');
 }

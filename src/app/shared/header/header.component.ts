@@ -12,7 +12,7 @@ import { ScrollService } from '../../../models/scroll.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  sliderValue = 50;
+  sliderValue = 0;
 
   constructor(private translate: TranslateService, private scrollService: ScrollService) {
     this.translate.setDefaultLang('en');
