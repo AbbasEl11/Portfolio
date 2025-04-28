@@ -1,0 +1,66 @@
+{
+  "HEADER": {
+    "ABOUT_ME_NAV_BAR": "Über mich",
+    "SKILLS_NAV_BAR": "Fähigkeiten",
+    "PROJECTS_NAV_BAR": "Projekte",
+    "CONTACT_NAV_BAR": "Kontakt"
+  },
+
+  "HERO": {
+    "TEXT_SHORT": "Hallo Welt",
+    "TEXT_LONG": "ICH BIN ABBAS EL MAHMOUD",
+    "BTN_GET_IN_TOUCH": "Kontaktieren"
+  },
+
+  "ABOUT_ME": {
+    "PAPER_YELLOW": "In Köln ansässig",
+    "PAPER_BLUE": "Bereit umzuziehen",
+    "PAPER_RED": "Bereit für Remote-Arbeit",
+    "HEADLINE_H3": "WER IST ABBAS?",
+    "HEADLINE_H1": "Über mich",
+    "INFO_PARAGRAPH": "Hallo, ich bin Abbas. Schon immer war ich IT-begeistert und habe Menschen um mich herum bei PC-Anliegen geholfen. Nach einigen Jahren ohne eigenen Computer kaufte ich mir einen und begann, mit Freunden an Mods und Spielen zu programmieren. Es machte mir so viel Spaß, dass ich beschloss, dies beruflich zu verfolgen. Was ich an der Programmierung am meisten schätze, ist die ständige Möglichkeit zu lernen und die Herausforderungen, die sich beim Finden und Beheben von Fehlern ergeben. Das Gefühl, etwas geschafft zu haben, motiviert mich immer wieder. Lass uns gemeinsam an etwas Außergewöhnlichem arbeiten!",
+    "BTN_TALK": "Lass uns reden"
+  },
+
+  "SKILLS": {
+    "HEADLINE_H3": "MEIN STACK",
+    "HEADLINE_H1": "Fähigkeiten",
+    "INFO_PARAGRAPH": "Ich habe umfassende Erfahrung mit Front-End-Technologien wie HTML, CSS und JavaScript sowie mit Frameworks wie Angular und React. Ich bin stets offen für Neues und strebe danach, meine Fähigkeiten kontinuierlich weiterzuentwickeln, um benutzerfreundliche und ansprechende Oberflächen zu gestalten."
+  },
+
+  "PROJECTS": {
+    "HEADLINE_H3": "MEIN HANDWERK",
+    "HEADLINE_H1": "Projekte",
+    "INFO_PARAGRAPH": "Ich lade euch ein, meine Projekte anzusehen und damit zu interagieren! Bei der Erstellung reaktionsschneller und benutzerfreundlicher Anwendungen lege ich großen Wert auf effizienten Code. Mein Ziel ist es, intuitives Design mit optimaler Performance zu kombinieren, sodass Nutzer ein reibungsloses Erlebnis haben. Schaut euch meine Arbeiten an und gebt mir gerne euer Feedback!",
+    "PROJECT_DETAILS": "Projektdetails"
+  },
+
+  "COLLEAGUES": {
+    "HEADLINE_H3": "IN IHREN WORTEN:",
+    "HEADLINE_H1": "Gedanken der Kollegen",
+    "QUOTE_1": "Die Zusammenarbeit mit Abbas El Mahmoud war eine fantastische Erfahrung. Seine Liebe zum Detail und sein Qualitätsbewusstsein heben unsere Projekte stets auf ein höheres Niveau. Er besitzt die bemerkenswerte Fähigkeit, komplexe Ideen in benutzerfreundliche Designs zu verwandeln.",
+    "NAME_LEO": "Leo Rullani",
+    "JOB_LEO": "Software Engineer",
+    "QUOTE_2": "Abbas El Mahmoud ist nicht nur ein talentierter Frontend-Entwickler, sondern auch ein großartiger Teamplayer. Er bringt Kreativität und Begeisterung in jede Herausforderung ein, was die Zusammenarbeit angenehm und produktiv gestaltet. Seine Programmierfähigkeiten werden nur von seiner Bereitschaft übertroffen, anderen beim Lernen zu helfen.",
+    "NAME_JANNIS": "Jannis Meyer",
+    "JOB_JANNIS": "Fullstack Developer",
+    "QUOTE_3": "Ich hatte das Vergnügen, mit Abbas El Mahmoud an mehreren Projekten zu arbeiten. Sein innovativer Ansatz und sein technisches Fachwissen sind äußerst wertvoll. Er bleibt stets auf dem Laufenden mit den neuesten Trends, sodass unsere Arbeit immer hochmodern und effektiv bleibt.",
+    "NAME_DORA": "Dora Teleksi",
+    "JOB_DORA": "Frontend Developer",
+    "PROFILE_LINK": "Profil"
+  },
+
+  "CONTACT": {
+    "HEADLINE_H3": "KONTAKTIERE MICH",
+    "HEADLINE_H1": "Bereit für eine Zusammenarbeit?",
+    "INFO_PARAGRAPH": "Ich lade euch herzlich ein, mich zu kontaktieren! Ich interessiere mich besonders für Rollen, die es mir ermöglichen, meine Front-End-Fähigkeiten in innovativen Projekten einzusetzen. Mit meinem Fachwissen und meiner Leidenschaft für kontinuierliches Lernen bin ich überzeugt, dass ich einen wertvollen Beitrag leisten kann. Ich bringe nicht nur technisches Know-how, sondern auch Kreativität und Teamgeist mit. Lasst uns gemeinsam an spannenden Herausforderungen arbeiten und außergewöhnliche Ergebnisse erzielen!",
+    "LABEL_NAME": "Wie ist dein Name?",
+    "LABEL_EMAIL": "Wie lautet deine E-Mail-Adresse?",
+    "LABEL_MESSAGE": "Wobei kann ich dir helfen?",
+    "PLACEHOLDER_NAME": "Dein Name hier",
+    "PLACEHOLDER_EMAIL": "DeineE-Mail@beispiel.com",
+    "PLACEHOLDER_MESSAGE": "Hallo Lukas, ich bin interessiert an...",
+    "PRIVACY_POLICY": "Ich habe die <a href=''>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "BTN_SEND": "Senden"
+  }
+}

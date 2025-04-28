@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
   height: 50dvh;
   margin-bottom: 300px;
@@ -71,8 +71,8 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 30px;
-  width: 600px;
-  height: 350px;
+  width: 512px;
+  height: 368px;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -94,14 +94,14 @@
     background-image: url(/assets/img/red-card1.png);
     transform: rotate(-5deg);
     top: -30px;
-    left: 8px;
+    left: 10px;
     z-index: 2;
   }
 
   &[data-card="jannis"] {
     background-image: url(/assets/img/red-card2.png);
     top: 0;
-    left: 415px;
+    left: 360px;
     z-index: 1;
   }
 
@@ -109,7 +109,7 @@
     background-image: url(/assets/img/red-card1.png);
     transform: rotate(5deg);
     top: -30px;
-    left: 830px;
+    left: 695px;
     z-index: 0;
   }
 

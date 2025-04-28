@@ -5,12 +5,13 @@ import { Project } from '../../../models/project.model';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-projects',
-  imports: [MatCardModule, MatButtonModule, RouterModule,CommonModule,MatGridListModule],
+  imports: [MatCardModule, MatButtonModule, RouterModule,CommonModule,MatGridListModule,TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

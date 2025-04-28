@@ -9,7 +9,7 @@
 .skill-section{
     display: flex;
     margin: 0 auto;
-    max-width: 1680px;
+    max-width: 1220px;
     width: 100%;
     height: 90vh;
     font-family: "Bricolage Grotesque";
@@ -19,11 +19,11 @@
         display: flex;
         flex-direction: row;
         width: 100%;;
-        margin-top: 130px;
+        margin-top: 100px;
 
         >.skills-text{
             position: relative;
-            width: 45%; 
+            width: 55%; 
             height: 150px;
             align-items: center;
             justify-content: center;
@@ -34,8 +34,9 @@
                     height: 130px;
                 }
                     >p{
+                    margin-top: 5px;
                     position: absolute; 
-                    width: 85%;
+                    width: 90%;
                     top: 15%;
                     left: 5%; 
                     color: rgb(0, 0, 0);  
@@ -44,12 +45,13 @@
         >.title-skills{
             display: flex;
             flex-direction: column;
-            width: 25%;
+            width: 21%;
             color: white;
             margin-right: 50px;
             background-image: url(/assets/draws/line_orange.png);
             background-repeat: no-repeat;
             animation: adjustedAnimation 7s linear infinite;
+            background-size: 256px 80px;
                 >h3{
                 font-size: 20px;
                 align-self: flex-end;
@@ -62,26 +64,26 @@
                 }
         @keyframes adjustedAnimation {
           0% { 
-            background-position: right center;
+            background-position: right 65px;
             animation-timing-function: ease-in; 
           }
           70% { 
-            background-position: right center;
+            background-position: right 65px;
             animation-timing-function: ease-in; 
           }
           80% { 
-            background-position: right -150px center;
+            background-position: right -150px 65px;
             animation-timing-function: linear;
           }
           90% { 
-            background-position: right -280px center;
+            background-position: right -280px 65px;
             animation-timing-function: ease-out;
           }
           95% { 
-            background-position: right -280px center;
+            background-position: right -280px 65px;
           }
           100% { 
-            background-position: right center;
+            background-position: 400px 65px;
           }
         }
 
@@ -97,7 +99,7 @@
     .skill-icons{
         display: flex;
         flex-wrap: wrap; 
-        gap: 50px;
+        gap: 50px 25px;
         width: 700px;
         margin-top: 40px;
             >.icon{
@@ -168,7 +170,7 @@
         height: 200px;
         transform: rotate(10deg);
         top: 65px;
-        right: -280px;
+        right: -250px;
         opacity: 0; 
         transition: opacity 0.3s ease-in-out;
     }
@@ -183,7 +185,7 @@
         width: 150px;
         height: 120px;
         top: 110px;
-        right: -255px;
+        right: -225px;
         opacity: 1;
     }
 

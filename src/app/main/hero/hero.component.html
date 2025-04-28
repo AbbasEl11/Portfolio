@@ -4,13 +4,16 @@
             <div class="title-section">
                 <div class="frontend-section">
                     <button class="animation-button">
-                        <span class="text-short">Hello World</span>
+                        <span class="text-short">
+                            {{ 'HERO.TEXT_SHORT' | translate }}
+                        </span>
 
-                        <span class="text-long">I'M ABBAS EL MAHMOUD</span>
+                        <span class="text-long">
+                            {{ 'HERO.TEXT_LONG' | translate }}
+                        </span>
 
                         <img src="assets/icons/waving_hand.png" alt="Hand" class="hand-wave" />
                     </button>
-
 
                     <h1>
                         <span class="other-f">F</span>
@@ -44,7 +47,9 @@
             </h1>
 
             <div class="btn-GIT">
-                <button class="touch-button">Get in Touch</button>
+                <button (click)="scrollTo('contactSection')" class="touch-button">
+                    {{ 'HERO.BTN_GET_IN_TOUCH' | translate }}
+                </button>
             </div>
         </div>
     </div>

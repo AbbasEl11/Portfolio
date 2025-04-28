@@ -1,35 +1,42 @@
-<div class="aboutme-section">
+<div class="aboutme-section" #aboutMeSection id="aboutMeSection">
     <div class="picture-content">
 
         <div class="paper-yellow">
             <img src="/assets/img/paper-yellow.png" alt="">
-            <span><img src="/assets/icons/location-icon1.png" alt="">Based in Cologne</span>
+            <span>
+                <img src="/assets/icons/location-icon1.png" alt="">
+                {{ 'ABOUT_ME.PAPER_YELLOW' | translate }}
+            </span>
         </div>
 
         <div class="paper-blue">
             <img src="/assets/img/paper-blue.png" alt="">
-            <span><img src="/assets/icons/location-icon2.png" alt="">Open to relocate</span>
+            <span>
+                <img src="/assets/icons/location-icon2.png" alt="">
+                {{ 'ABOUT_ME.PAPER_BLUE' | translate }}
+            </span>
         </div>
 
         <div class="paper-red">
             <img src="/assets/img/paper-red.png" alt="">
-            <span><img src="/assets/icons/location-icon3.png" alt="">Open to work remote</span>
+            <span>
+                <img src="/assets/icons/location-icon3.png" alt="">
+                {{ 'ABOUT_ME.PAPER_RED' | translate }}
+            </span>
         </div>
     </div>
 
     <div class="aboutme-content">
-        <h3>WHO'S ABBAS?</h3>
-        <h1>About me</h1>
+        <h3>{{ 'ABOUT_ME.HEADLINE_H3' | translate }}</h3>
+        <h1>{{ 'ABOUT_ME.HEADLINE_H1' | translate }}</h1>
         <div class="fill-blue-line"></div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius quis aut eveniet, debitis maxime veniam officia saepe!
-            Necessitatibus magni nisi, aspernatur possimus dicta inventore praesentium laboriosam,
-            ex voluptatum, voluptas excepturi?</p>
+        <p>{{ 'ABOUT_ME.INFO_PARAGRAPH' | translate }}</p>
 
         <div class="btn-lets-talk">
-            <button class="talk-button">Let's talk</button>
+            <button (click)="scrollTo('contactSection')" class="talk-button">
+                {{ 'ABOUT_ME.BTN_TALK' | translate }}
+            </button>
         </div>
-
     </div>
 </div>

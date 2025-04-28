@@ -1,0 +1,67 @@
+{
+  "HEADER":{
+    "ABOUT_ME_NAV_BAR": "About Me",
+    "SKILLS_NAV_BAR": "Skills",
+    "PROJECTS_NAV_BAR": "Projects",
+    "CONTACT_NAV_BAR": "Contact"
+  },  
+
+  "HERO": {
+    "TEXT_SHORT": "Hello World",
+    "TEXT_LONG": "I'M ABBAS EL MAHMOUD",
+    "BTN_GET_IN_TOUCH": "Get in Touch"
+  },
+
+  "ABOUT_ME": {
+    "PAPER_YELLOW": "Based in Cologne",
+    "PAPER_BLUE": "Open to relocate",
+    "PAPER_RED": "Open to work remote",
+    "HEADLINE_H3": "WHO'S ABBAS?",
+    "HEADLINE_H1": "About me",
+    "INFO_PARAGRAPH": "Hello, I'm Abbas. I've always been passionate about IT and have helped those around me with their PC-related issues. After several years without my own computer, I purchased one and began programming mods and games with friends. I enjoyed it so much that I decided to pursue it as a career. What I appreciate most about programming is the constant opportunity to learn and the challenges that come with finding and fixing errors. The feeling of having accomplished something motivates me to keep going. Let's work together to create something extraordinary!",
+    "BTN_TALK": "Let's talk"
+  },
+
+  "SKILLS": {
+    "HEADLINE_H3": "MY STACK",
+    "HEADLINE_H1": "Skill set",
+    "INFO_PARAGRAPH": "I have extensive experience with front-end technologies like HTML, CSS, and JavaScript, as well as frameworks like Angular and React. I am always open to learning new things and strive to continuously improve my skills to create user-friendly and engaging interfaces."
+  },
+
+  "PROJECTS": {
+    "HEADLINE_H3": "MY CRAFT",
+    "HEADLINE_H1": "Projects",
+    "INFO_PARAGRAPH": "I encourage you to check out my projects and interact with them! When creating responsive and user-friendly applications, I focus on efficient code. My goal is to combine intuitive design with optimal performance, ensuring users have a smooth experience. Feel free to explore my work and share your feedback!",
+    "PROJECT_DETAILS": "Project Details"
+  },
+
+  "COLLEAGUES": {
+    "HEADLINE_H3": "IN THEIR WORDS:",
+    "HEADLINE_H1": "Colleagues' Thoughts",
+    "QUOTE_1": "Working alongside Abbas El Mahmoud has been a fantastic experience. Their attention to detail and commitment to quality consistently elevate our projects. They have an impressive ability to transform complex ideas into user-friendly designs.",
+    "NAME_LEO": "Leo Rullani",
+    "JOB_LEO": "Software Engineer",
+    "QUOTE_2": "Abbas El Mahmoud is not only a skilled frontend developer but also a great team player. They bring creativity and enthusiasm to every challenge, making collaboration enjoyable and productive. Their coding skills are matched only by their willingness to help others grow.",
+    "NAME_JANNIS": "Jannis Meyer",
+    "JOB_JANNIS": "Fullstack Developer",
+    "QUOTE_3": "I’ve had the pleasure of collaborating with Abbas El Mahmoud on several projects. Their innovative approach and technical expertise have been invaluable. They always stay updated with the latest trends, ensuring our work remains cutting-edge and effective.",
+    "NAME_DORA": "Dora Teleksi",
+    "JOB_DORA": "Frontend Developer",
+    "PROFILE_LINK": "Profile"
+  },
+  
+  "CONTACT": {
+    "HEADLINE_H3": "CONTACT ME",
+    "HEADLINE_H1": "Ready to work together?",
+    "INFO_PARAGRAPH": "I warmly invite you to reach out to me! I am particularly interested in roles that allow me to apply my front-end skills to innovative projects. With my expertise and passion for continuous learning, I am confident that I can make a valuable contribution. I bring not only technical knowledge but also creativity and teamwork. Let’s collaborate on exciting challenges and achieve extraordinary results together!",
+    "LABEL_NAME": "What's your name?",
+    "LABEL_EMAIL": "What's your email?",
+    "LABEL_MESSAGE": "How can I help you?",
+    "PLACEHOLDER_NAME": "Your name goes here",
+    "PLACEHOLDER_EMAIL": "youremail@email.com",
+    "PLACEHOLDER_MESSAGE": "Hello Lukas, I am interested in...",
+    "PRIVACY_POLICY": "I've read the <a href=''>privacy policy</a> and agree to the processing of my data as outlined.",
+    "BTN_SEND": "Send"
+  }
+}
+
