@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ScrollService } from '../../../models/scroll.service';
+import { ScrollService } from '../../services/scroll.service';
 
 
 @Component({

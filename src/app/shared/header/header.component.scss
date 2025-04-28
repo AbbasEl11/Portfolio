@@ -2,37 +2,27 @@
     position: relative;
     height: 0;
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1920px;
+    gap: 20px;
     
     header{
     height: 100px;
-    width: 1300px;
+    width: 100%;
+    max-width: 1680px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: transparent;
     font-family: "Bricolage Grotesque";
     margin: 0 auto;
-    }
-}
+    justify-content: space-between;
 
-.header-logo{
+    .nav-bar {
     display: flex;
-    position: relative;
-    >img{
-        width: 100px;
-        height: 200px;
-        object-fit: cover;
-    }
-}
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0 auto;
 
-header {
-  .nav-bar {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
 
     > a {
       position: relative;
@@ -90,6 +80,17 @@ header {
       }
     }
   }
+    }
+}
+
+.header-logo{
+    display: flex;
+    position: relative;
+    >img{
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
 
 

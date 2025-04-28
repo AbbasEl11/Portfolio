@@ -6,7 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ColleaguesComponent } from './colleagues/colleagues.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
-import { ScrollService } from '../../models/scroll.service';
+import { ScrollService } from '../services/scroll.service';
 import { FooterComponent } from './footer/footer.component';
 
 @Component({
