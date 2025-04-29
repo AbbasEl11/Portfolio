@@ -24,7 +24,7 @@
 
   "SKILLS": {
     "HEADLINE_H3": "MEIN STACK",
-    "HEADLINE_H1": "Fähigkeiten",
+    "HEADLINE_H1": "Skill's",
     "INFO_PARAGRAPH": "Ich habe umfassende Erfahrung mit Front-End-Technologien wie HTML, CSS und JavaScript sowie mit Frameworks wie Angular und React. Ich bin stets offen für Neues und strebe danach, meine Fähigkeiten kontinuierlich weiterzuentwickeln, um benutzerfreundliche und ansprechende Oberflächen zu gestalten."
   },
 
@@ -61,6 +61,39 @@
     "PLACEHOLDER_EMAIL": "DeineE-Mail@beispiel.com",
     "PLACEHOLDER_MESSAGE": "Hallo Lukas, ich bin interessiert an...",
     "PRIVACY_POLICY": "Ich habe die <a href=''>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
-    "BTN_SEND": "Senden"
+    "BTN_SEND": "Senden",
+    "NAME_VALIDATION": "Bitte einen gültigen Namen eingeben!",
+    "EMAIL_VALIDATION": "Bitte eine gültige E-Mail-Adresse eingeben!",
+    "TEXT_VALIDATION": "Die Nachricht muss mindestens 10 Zeichen enthalten.",
+    "NAME_VALIDATION_SECOND": "Der Name muss mindestens 3 Zeichen enthalten.",
+    "EMAIL_VALIDATION_SECOND": "Die E-Mail-Adresse muss mindestens 3 Zeichen enthalten.",
+    "NAME_VALIDATION_THIRD": " Der Name darf keine Zahlen oder Sonderzeichen enthalten!",
+    "MAIL_SEND": "Ihre Nachricht wurde erfolgreich versendet.",
+    "MAIL_SEND_TY": "Vielen Dank!",
+    "PRIVACY_VALIDATION": "Bitte akzeptiere die Datenschutzbestimmungen."
+  },
+    "PROJECT_DETAILS_": {
+    "RETURN": "Gehe zurück",
+    "DESCRIPTION": "Beschreibung",
+    "DETAILS": "Implementierungsdetails",
+    "DURATION": "Dauer",
+    "NEXT_PROJECT": "Nächstes Projekt"
+  },
+   "PROJECT_DETAILS": {
+    "JOIN": {
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+      "IMPLEMENTDETAILS": "Im Projekt 'Join' habe ich eine Plattform entwickelt, die die Zusammenarbeit und Kommunikation zwischen Nutzern verbessert. Ich nutzte Technologien wie JavaScript, React und Node.js, um eine benutzerfreundliche Oberfläche und eine leistungsfähige Backend-Architektur zu schaffen. Besonders hervorzuheben ist die Implementierung von Echtzeit-Kommunikationsfunktionen, die es Nutzern ermöglichen, sofortige Rückmeldungen zu erhalten. Durch enge Zusammenarbeit im agilen Team konnten wir die Plattform flexibel anpassen und kontinuierlich verbessern. ",
+      "DURATION": "5 Wochen"
+    },
+    "ELPOLLOLOCO": {
+      "DESCRIPTION": "Jump, Run und Throw-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+      "IMPLEMENTDETAILS": "Im Projekt 'El Pollo Loco' habe ich ein spannendes Jump-and-Run-Spiel entwickelt, das auf objektorientierter Programmierung basiert. Die Spieler schlüpfen in die Rolle von Pepe und navigieren durch verschiedene Levels, um Münzen und Tabasco-Salsa zu sammeln, während sie gegen verrückte Hühner kämpfen. Ich habe JavaScript verwendet, um die Spielmechanik zu implementieren und ein objektorientiertes Design zu verfolgen, um die Charaktere und deren Interaktionen zu gestalten. Das Spiel bietet interaktive Elemente, herausfordernde Bosskämpfe und lebendige Soundeffekte, die das Gesamterlebnis verbessern. Durch enge Zusammenarbeit mit anderen Entwicklern konnte ich das Spiel kontinuierlich verbessern und anpassen.",
+      "DURATION": "3 Wochen"
+    },
+    "DABUBBLE": {
+      "DESCRIPTION": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und robuster Kanalorganisation.",
+      "IMPLEMENTDETAILS": "In the 'Join' project, I developed a platform that enhances collaboration and communication among users. I used JavaScript and Node.js, and worked with the Firebase API to store inputs and ensure a reliable database. Additionally, I implemented user login and registration features to enhance the platforms security. Through close collaboration in an agile team, we were able to adapt the platform flexibly and continuously improve it.",
+      "DURATION": "4 Wochen"
+    }
   }
 }

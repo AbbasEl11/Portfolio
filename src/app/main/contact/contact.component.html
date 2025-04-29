@@ -3,7 +3,6 @@
         <div class="text-content">
             <div class="contact-header">
                 <h3>{{ 'CONTACT.HEADLINE_H3' | translate }}</h3>
-
                 <h1>{{ 'CONTACT.HEADLINE_H1' | translate }}</h1>
             </div>
 
@@ -12,30 +11,109 @@
             <div class="fill-orange-arrow"></div>
         </div>
 
-        <form class="contact-form">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="contact-form">
+
+            <!-- NAME -->
             <div class="form-group">
                 <label for="name">{{ 'CONTACT.LABEL_NAME' | translate }}</label>
-                <input type="text" id="name" placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}" />
+
+                <!-- Input template -->
+                <ng-template #showNameInput>
+                    <input id="name" formControlName="name" placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}"
+                        (blur)="checkValidity('name')" (focus)="clearError('name')" />
+                </ng-template>
+
+                <!-- Error message instead of input -->
+                <ng-container *ngIf="
+            myForm.get('name')?.invalid &&
+            (myForm.get('name')?.touched || submitted) &&
+            !editingName;
+            else showNameInput
+          ">
+                    <div class="error-message" (click)="startEditingName()">
+                        <small *ngIf="myForm.get('name')?.errors?.['required']">
+                            {{ 'CONTACT.NAME_VALIDATION' | translate }}
+                        </small>
+                        <small *ngIf="myForm.get('name')?.errors?.['minlength']">
+                            {{ 'CONTACT.NAME_VALIDATION_SECOND' | translate }}
+                        </small>
+                        <small *ngIf="myForm.get('name')?.errors?.['pattern']">
+                            {{ 'CONTACT.NAME_VALIDATION_THIRD' | translate }}
+                        </small>
+                    </div>
+                </ng-container>
             </div>
 
+            <!-- EMAIL -->
             <div class="form-group">
                 <label for="email">{{ 'CONTACT.LABEL_EMAIL' | translate }}</label>
-                <input type="email" id="email" placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" />
+
+                <ng-template #showEmailInput>
+                    <input id="email" type="email" formControlName="email"
+                        placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}" (blur)="checkValidity('email')"
+                        (focus)="clearError('email')" />
+                </ng-template>
+
+                <ng-container *ngIf="
+            myForm.get('email')?.invalid &&
+            (myForm.get('email')?.touched || submitted) &&
+            !editingEmail;
+            else showEmailInput
+          ">
+                    <div class="error-message" (click)="startEditingEmail()">
+                        <small *ngIf="myForm.get('email')?.errors?.['required']">
+                            {{ 'CONTACT.EMAIL_VALIDATION_SECOND' | translate }}
+                        </small>
+                        <small *ngIf="myForm.get('email')?.errors?.['email']">
+                            {{ 'CONTACT.EMAIL_VALIDATION' | translate }}
+                        </small>
+                    </div>
+                </ng-container>
             </div>
 
+            <!-- MESSAGE -->
             <div class="form-group">
                 <label for="message">{{ 'CONTACT.LABEL_MESSAGE' | translate }}</label>
-                <textarea id="message" placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}"></textarea>
+
+                <ng-template #showMessageInput>
+                    <textarea id="message" formControlName="message"
+                        placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}" (blur)="checkValidity('message')"
+                        (focus)="clearError('message')"></textarea>
+                </ng-template>
+
+                <ng-container *ngIf="
+            myForm.get('message')?.invalid &&
+            (myForm.get('message')?.touched || submitted) &&
+            !editingMessage;
+            else showMessageInput
+          ">
+                    <div class="error-message" (click)="startEditingMessage()">
+                        <small *ngIf="myForm.get('message')?.errors?.['required']">
+                            {{ 'CONTACT.TEXT_VALIDATION' | translate }}
+                        </small>
+                        <small *ngIf="myForm.get('message')?.errors?.['minlength']">
+                            {{ 'CONTACT.TEXT_VALIDATION_SECOND' | translate }}
+                        </small>
+                    </div>
+                </ng-container>
             </div>
 
+            <!-- PRIVACY CHECKBOX -->
             <div class="checkbox-group">
-                <input class="checkbox" type="checkbox" id="privacy" required>
+                <input id="privacy" class="checkbox" type="checkbox" formControlName="privacy" />
                 <label for="privacy"></label>
                 <span class="checkbox-text" [innerHTML]="('CONTACT.PRIVACY_POLICY' | translate)"></span>
             </div>
 
+            <!-- Privacy error message -->
+            <div class="privacy-error" *ngIf="privacyError">
+                <span>{{ 'CONTACT.PRIVACY_VALIDATION' | translate }}</span>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
             <div class="btn-send">
-                <button class="send-button">
+                <button type="button" class="send-button" [class.disabled-btn]="!myForm.get('privacy')?.value"
+                    (click)="onAttemptSend()">
                     {{ 'CONTACT.BTN_SEND' | translate }}
                 </button>
             </div>

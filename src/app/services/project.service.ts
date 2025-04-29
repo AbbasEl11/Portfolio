@@ -10,11 +10,13 @@ export class ProjectService {
   {
     id: 'join',
     title: 'Join',
-    description: 'Task manager inspired by the Kanban System. Create and organize tasks drag and drop functions, assign users and categories',
-    implementDetails: 'Short text...',
-    duration: '5 weeks',
+    description: 'PROJECT_DETAILS.JOIN.DESCRIPTION',
+    implementDetails: 'PROJECT_DETAILS.JOIN.IMPLEMENTDETAILS',
+    duration: 'PROJECT_DETAILS.JOIN.DURATION',
     imageUrl: '/assets/img/join-board.jpg',
     route: '/projects/join',
+    gitHubUrl: 'https://github.com/AbbasEl11/join',
+    liveTestUrl: 'http://abbas-el-mahmoud.com/join/index.html',
     materials: [
       { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
       { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
@@ -26,12 +28,14 @@ export class ProjectService {
   {
     id: 'elpollo',
     title: 'El Pollo Loco',
-    description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-    implementDetails: 'Short text...',
-    duration: '5 weeks',
+    description: 'PROJECT_DETAILS.ELPOLLOLOCO.DESCRIPTION',
+    implementDetails: 'PROJECT_DETAILS.ELPOLLOLOCO.IMPLEMENTDETAILS',
+    duration: 'PROJECT_DETAILS.ELPOLLOLOCO.DURATION',
     imageUrl: '/assets/img/elpollo.jpg',
     route: '/projects/elpollo', 
-            materials: [
+    gitHubUrl: 'https://github.com/AbbasEl11/El-Pollo-Loco',
+    liveTestUrl: 'http://abbas-el-mahmoud.com/elpolloloco/index.html',
+    materials: [
       { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
       { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
       { name: 'JavaScript', iconUrl: '/assets/icons/Property1=Js.png' },
@@ -40,15 +44,17 @@ export class ProjectService {
     {
     id: 'dabubble',
     title: 'DABubble',
-    description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-    implementDetails: 'Short text...',
-    duration: '5 weeks',
+    description: 'PROJECT_DETAILS.DABUBBLE.DESCRIPTION',
+    implementDetails: 'PROJECT_DETAILS.DABUBBLE.IMPLEMENTDETAILS',
+    duration: 'PROJECT_DETAILS.DABUBBLE.DURATION',
     imageUrl: '/assets/img/dabubble.jpg',
     route: '/projects/dabubble',
-            materials: [
-      { name: 'HTML', iconUrl: '/assets/icons/html.svg' },
-      { name: 'CSS', iconUrl: '/assets/icons/css.svg' },
-      { name: 'JavaScript', iconUrl: '/assets/icons/js.svg' },
+    gitHubUrl: 'https://github.com/AbbasEl11/dabubble',
+    liveTestUrl: 'http://abbas-el-mahmoud.com/dabubble/index.html',
+    materials: [
+      { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
+      { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
+      { name: 'JavaScript', iconUrl: '/assets/icons/Property1=Js.png' },
     ]
   },
 ];

@@ -152,23 +152,12 @@
 
       &:focus {
         outline: none;
+        background-color: transparent;
       }
     }
   }
 
-  .checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    padding: 10px 0;
-    position: relative;
-
-    .checkbox-text {
-      user-select: text;
-      font-size: 15px;
-
-      > a {
+        .privacy-link {
         text-decoration: none;
         color: #0066ff;
 
@@ -176,6 +165,18 @@
           color: rgb(248, 122, 85);
         }
       }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: relative;
+
+    .checkbox-text {
+      user-select: text;
+      font-size: 15px;
     }
 
     > input[type="checkbox"] {
@@ -255,7 +256,7 @@
       transform: translateY(-4px) translateX(-4px);
       box-shadow: 2px 4px 1px 0px #ffffff;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
-
+      z-index: 9;
       &:hover {
         transform: translateY(0);
         box-shadow: 0 0 0 0 #f5f6f7;
@@ -263,5 +264,32 @@
         color: white;
       }
     }
+    .send-button.disabled-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: grey;
+  color: #ccc;
+  box-shadow: none;
+  transform: none;
+}
   }
+
+.error-message {
+  height: 20px;
+  display: flex;
+  color: #ff3a00;
+  background-color: transparent;
+  margin-left: 12px;
+  margin-top: 16px;
+  >small{
+    font-size: 18px;
+    height: 20px;
+  };
+}
+
+.privacy-error{
+    color: #ff3a00;
+      font-size: 14px;
+      margin-bottom: 20px;
+}
 }

@@ -60,8 +60,44 @@
     "PLACEHOLDER_NAME": "Your name goes here",
     "PLACEHOLDER_EMAIL": "youremail@email.com",
     "PLACEHOLDER_MESSAGE": "Hello Lukas, I am interested in...",
-    "PRIVACY_POLICY": "I've read the <a href=''>privacy policy</a> and agree to the processing of my data as outlined.",
-    "BTN_SEND": "Send"
+    "PRIVACY_POLICY": "I've read the <a  href='' style='text-decoration: none; color: blue;'>privacy policy</a> and agree to the processing of my data as outlined.",
+    "BTN_SEND": "Send",
+    "NAME_VALIDATION": "Please enter a vaild Name!",
+    "EMAIL_VALIDATION": "Please enter a valid Email!",
+    "TEXT_VALIDATION": "Please enter a valid Textmessage!",
+    "TEXT_VALIDATION_SECOND": "Message must contain at least 10 characters.",
+    "NAME_VALIDATION_SECOND": "Name must contain at least 3 characters.",
+    "EMAIL_VALIDATION_SECOND": "Email must contain at least 3 characters.",
+    "NAME_VALIDATION_THIRD": "The name must not contain numbers or special characters!",
+    "MAIL_SEND": "Your message has been successfully sent.",
+    "MAIL_SEND_TY": "Thank you!",
+    "PRIVACY_VALIDATION": "Please accept the privacy policy."
+
+  },
+  "PROJECT_DETAILS_": {
+    "RETURN": "Go Back",
+    "DESCRIPTION": "Description",
+    "DETAILS": "Implement Details",
+    "LABEL_NAME": "What's your name?",
+    "DURATION": "Duration",
+    "NEXT_PROJECT": "Next Project"
+  },
+ "PROJECT_DETAILS": {
+    "JOIN": {
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks drag and drop functions, assign users and categories",
+      "IMPLEMENTDETAILS": "In the 'Join' project, I developed a platform that enhances collaboration and communication among users. I used JavaScript and Node.js, and worked with the Firebase API to store inputs and ensure a reliable database. Additionally, I implemented user login and registration features to enhance the platforms security. Through close collaboration in an agile team, we were able to adapt the platform flexibly and continuously improve it.",
+      "DURATION": "5 weeks"
+    },
+    "ELPOLLOLOCO": {
+      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "IMPLEMENTDETAILS": "In the 'El Pollo Loco' project, I developed an engaging jump-and-run game based on object-oriented programming. Players take on the role of Pepe, navigating through various levels to collect coins and Tabasco salsa while battling crazy chickens. I used JavaScript to implement the game mechanics, focusing on an object-oriented design to create characters and their interactions. The game features interactive gameplay elements, challenging boss fights, and lively sound effects that enhance the overall experience. Through close collaboration with other developers, I was able to continuously improve and adapt the game.",
+      "DURATION": "3 weeks"
+    },
+    "DABUBBLE": {
+      "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "IMPLEMENTDETAILS": "In the 'Join' project, I developed a platform that enhances collaboration and communication among users. I used JavaScript and Node.js, and worked with the Firebase API to store inputs and ensure a reliable database. Additionally, I implemented user login and registration features to enhance the platforms security. Through close collaboration in an agile team, we were able to adapt the platform flexibly and continuously improve it.",
+      "DURATION": "4 weeks"
+    }
   }
 }
 

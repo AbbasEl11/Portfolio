@@ -12,4 +12,6 @@ export interface Project {
   imageUrl: string;
   route: string | string[];
   materials?: Material[];
+  gitHubUrl: string;
+  liveTestUrl: string;
 }
