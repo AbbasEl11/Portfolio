@@ -52,3 +52,79 @@ ng serve
 
 # Open in browser
 http://localhost:4200
+
+
+
+⚙️ Build & Deployment
+bash
+Kopieren
+Bearbeiten
+ng build --prod
+Produces optimized files in dist/.
+To deploy to GitHub Pages:
+
+bash
+Kopieren
+Bearbeiten
+npm install -g angular-cli-ghpages
+ng deploy --base-href=/Portfolio/
+
+📁 Project Structure
+csharp
+Kopieren
+Bearbeiten
+Portfolio/
+├── .vscode/             # Editor settings
+├── public/              # Static assets
+├── src/
+│   ├── app/             # Angular components
+│   ├── assets/          # Images, fonts
+│   └── styles/          # Global SCSS
+├── angular.json         # Angular config
+├── package.json
+├── tsconfig.json
+├── .gitignore
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+└── CODE_OF_CONDUCT.md
+
+✅ Tests
+Unit Tests:
+
+bash
+Kopieren
+Bearbeiten
+ng test
+E2E Tests: (if configured)
+
+bash
+Kopieren
+Bearbeiten
+ng e2e
+
+🤝 Contributing
+Please see CONTRIBUTING.md for details.
+
+📄 License
+This project is licensed under the MIT License.
+
+yaml
+Kopieren
+Bearbeiten
+
+---
+
+## 4. `LICENSE` (MIT)
+
+Create `Portfolio/LICENSE` containing the full MIT text:
+
+```text
+MIT License
+
+Copyright (c) 2025 Abbas EL
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+... (rest of MIT license) ...
