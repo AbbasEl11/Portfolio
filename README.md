@@ -106,3 +106,22 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 📄 License
 This project is licensed under the [MIT License](LICENSE).
+
+```yami
+
+---
+
+## 4. `LICENSE` (MIT)
+
+Create `Portfolio/LICENSE` containing the full MIT text:
+
+```text
+MIT License
+
+Copyright (c) 2025 Abbas EL
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+... (rest of MIT license) ...
+````
