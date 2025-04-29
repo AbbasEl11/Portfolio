@@ -106,29 +106,3 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 📄 License
 This project is licensed under the [MIT License](LICENSE).
-
-```yami
-
----
-
-### Schritt für Schritt:
-
-1. **Datei anlegen**  
-   Erstelle im Root deines `Portfolio`-Repos eine Datei namens 
-```
-
-README.md
-
-```perl
-
-2. **Markdown einfügen**  
-Öffne `README.md` in deinem Editor und kopiere _nur_ den Text oben (alles zwischen den ```markdown fences) hinein.
-
-3. **Speichern & Commit**  
-```bash
-git add README.md
-git commit -m "Add professional README"
-git push
-```
-
-
