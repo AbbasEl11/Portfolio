@@ -12,5 +12,5 @@ We commit to fostering an open and welcoming environment.
 
 ## Reporting
 
-Report any unacceptable behavior to `contact@yourdomain.com`.  
+Report any unacceptable behavior to `abbas-el-mahmoud@hotmail.com`.  
 Violations may result in moderation or bans.
