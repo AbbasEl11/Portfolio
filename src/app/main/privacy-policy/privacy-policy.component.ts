@@ -1,0 +1,15 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
+
+@Component({
+  selector: 'app-privacy-policy',
+  imports: [MatDialogModule,MatCardModule,CommonModule,TranslateModule],
+  templateUrl: './privacy-policy.component.html',
+  styleUrl: './privacy-policy.component.scss'
+})
+export class PrivacyPolicyComponent {
+
+}

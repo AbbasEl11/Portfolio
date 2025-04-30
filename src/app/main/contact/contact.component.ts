@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -6,12 +6,14 @@ import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { MailSendedComponent } from '../mail-sended/mail-sended.component';
 
+
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [TranslateModule, ReactiveFormsModule, CommonModule],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ContactComponent implements OnInit {
   myForm!: FormGroup;
