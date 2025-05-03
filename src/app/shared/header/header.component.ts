@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ScrollService } from '../../services/scroll.service';
 
@@ -13,15 +13,30 @@ import { ScrollService } from '../../services/scroll.service';
 })
 export class HeaderComponent {
   sliderValue = 0;
+  public menuOpen = false;
 
-  constructor(private translate: TranslateService, private scrollService: ScrollService) {
+  constructor(private translate: TranslateService, private scrollService: ScrollService, private renderer: Renderer2) {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
   }
 
-  scrollTo(sectionId: string) {
-    this.scrollService.scrollTo(sectionId);
+  public toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+    if (this.menuOpen) {
+      this.renderer.setStyle(document.body, 'overflow', 'hidden');
+    } else {
+      this.renderer.removeStyle(document.body, 'overflow');
+    }
   }
+
+  public scrollTo(id: string): void {
+    this.scrollService.scrollTo(id);
+
+      if (this.menuOpen && window.innerWidth <= 1025) {
+    this.toggleMenu();
+  }
+  }
+  
 
 
   onSliderInput(event: Event): void {

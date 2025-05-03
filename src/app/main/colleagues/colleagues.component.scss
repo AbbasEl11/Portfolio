@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   max-width: 1220px;
-  margin: 0 auto;
-  height: 50dvh;
-  margin-bottom: 300px;
+  margin: 0 auto 150px;
+  height: 100%;
+  box-sizing: border-box;
 
   > .colleagues-header {
     display: flex;
@@ -14,36 +13,29 @@
     justify-content: flex-end;
     width: 100%;
     height: 100%;
-    
+
     > h3 {
       align-self: flex-end;
       font-weight: 400;
       font-size: 20px;
       margin-bottom: 10px;
     }
-    
+
     > h1 {
       align-self: flex-end;
       font-size: 64px;
-      margin: 0;
-      margin-bottom: 80px;
+      margin: 0 0 80px;
     }
-    
+
     .blue-arrow-div {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      
+
       .fill-blue-arrow {
-        top: 0;
-        left: 0;
         width: 100px;
         height: 48px;
-        align-self: flex-end;
-        background-image: url(/assets/draws/blue-arrow.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100px 36px;
+        background: url(/assets/draws/blue-arrow.png) center/100px 36px no-repeat;
         z-index: 999;
         animation: blueArrowAnimation 6s infinite alternate ease-in-out;
         margin-right: 20px;
@@ -53,77 +45,124 @@
 }
 
 @keyframes blueArrowAnimation {
-  0% { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
-  25% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  75% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  100% { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+  0% {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
 }
 
 .red-cards-container {
   display: flex;
-  position: relative;
+  align-items: center;
   width: 100%;
-  height: 100%;
-}
+  max-width: 1200px;
+  box-sizing: border-box;
+  --overlap: 10rem;
 
-.red-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 30px;
-  width: 512px;
-  height: 368px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  transition: z-index 0.4s ease;
+  .red-card {
+    position: relative;
+    overflow: hidden;
+    width: clamp(300px, 60%, 512px);
+    flex: 0 0 auto;
+    aspect-ratio: 512 / 368;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: margin-inline-start 0.3s ease, z-index 0.4s ease;
+    margin-inline-start: calc(-1 * var(--overlap));
 
-  .hover-lines {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 2;
-    transition: opacity 0.3s ease;
-  }
-
-  &[data-card="leo"] {
-    background-image: url(/assets/img/red-card1.png);
-    transform: rotate(-5deg);
-    top: -30px;
-    left: 10px;
-    z-index: 2;
-  }
-
-  &[data-card="jannis"] {
-    background-image: url(/assets/img/red-card2.png);
-    top: 0;
-    left: 360px;
-    z-index: 1;
-  }
-
-  &[data-card="dora"] {
-    background-image: url(/assets/img/red-card1.png);
-    transform: rotate(5deg);
-    top: -30px;
-    left: 695px;
-    z-index: 0;
-  }
-
-  &:hover {
-    z-index: 5 !important;
-    
-    .hover-lines {
-      opacity: 0.4;
+    &:first-child {
+      margin-inline-start: 0;
     }
-    
+
+    > .hover-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &:hover > .hover-lines {
+      opacity: 0.4 !important;
+      z-index: 2;
+    }
+
+    .red-card-text,
+    .red-card-content-bottom,
+    .linkedin-profile,
     .profile-content {
-      .name,
-      .job {
-        color: white !important;
+      position: relative;
+      z-index: 3;
+    }
+
+    &[data-card="leo"] {
+      background-image: url(/assets/img/red-card1.png);
+      transform: rotate(-5deg);
+      z-index: 4;
+
+      &:hover {
+        z-index: 20;
+
+        .name,
+        .job {
+          color: white !important;
+        }
+      }
+    }
+
+    &[data-card="jannis"] {
+      background-image: url(/assets/img/red-card2.png);
+      transform: none;
+      z-index: 3;
+
+      &:hover {
+        z-index: 20;
+
+        .name,
+        .job {
+          color: white !important;
+        }
+      }
+    }
+
+    &[data-card="dora"] {
+      background-image: url(/assets/img/red-card1.png);
+      transform: rotate(5deg);
+      z-index: 2;
+
+      &:hover {
+        z-index: 20;
+
+        .name,
+        .job {
+          color: white !important;
+        }
       }
     }
   }
@@ -138,7 +177,6 @@
 
 .red-card-content-bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   padding: 40px;
@@ -149,13 +187,12 @@
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  
+
   a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
-    z-index: 5;
     transition: color 0.3s ease;
 
     img {
@@ -167,7 +204,7 @@
 
     &:hover {
       color: white !important;
-      
+
       img {
         filter: brightness(100) !important;
       }
@@ -180,8 +217,177 @@
     font-size: 20px;
     font-weight: 700;
   }
-  
+
   .job {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .colleagues-header {
+    width: auto !important;
+    margin-inline: 2rem;
+  }
+
+  .red-cards-container {
+    --overlap: 11rem;
+    padding-inline: 2rem;
+
+    .red-card {
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .red-cards-container {
+    --overlap: 6rem;
+
+    .red-card {
+      width: clamp(300px, 60%, 450px);
+
+      .red-card-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1217px) {
+  .red-cards-container {
+    --overlap: 12rem;
+
+    .red-card {
+      width: clamp(300px, 60%, 450px);
+
+      .red-card-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .colleagues-section{
+    align-items: center;
+  }
+  .colleagues-header {
+    width: 560px !important;
+ 
+    > h1 {
+      white-space: normal;
+      overflow-wrap: break-word;
+      text-align: right;
+    }
+  }
+  .red-cards-container {
+    flex-direction: column;
+    --overlap: 0;
+
+    .red-card {
+      width: 560px;
+      height: 343px;
+
+      .red-card-text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+
+  .colleagues-header {
+    width: 474px !important;
+ 
+    > h1 {
+      white-space: normal;
+      overflow-wrap: break-word;
+      text-align: right;
+    }
+  }
+  .red-cards-container {
+    flex-direction: column;
+    --overlap: 0;
+
+    .red-card {
+      width: 450px;
+      height: 343px;
+
+      .red-card-text {
+        font-size: 15px;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .colleagues-header {
+    width: 322px !important;
+    > h1 {
+      font-size: 40px !important;
+    }
+
+    .blue-arrow-div {
+      > h3 {
+        font-size: 14px;
+      }
+
+      .fill-blue-arrow {
+        background-size: 40px !important;
+        width: 40px !important;
+      }
+    }
+  }
+
+  .red-cards-container {
+    .red-card {
+      width: 300px !important;
+      height: 343px;
+
+      .red-card-content-bottom {
+        .profile-content {
+          .name {
+            font-size: 16px !important;
+          }
+
+          .job {
+            font-size: 14px !important;
+          }
+        }
+
+        .linkedin-profile {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .colleagues-header {
+    width: 285px !important;
+  }
+  .red-cards-container {
+    .red-card {
+      width: 270px !important;
+
+      .red-card-content-bottom {
+        .profile-content {
+          .name {
+            font-size: 14px !important;
+          }
+
+          .job {
+            font-size: 12px !important;
+          }
+        }
+
+        .linkedin-profile {
+          font-size: 12px !important;
+        }
+      }
+    }
   }
 }

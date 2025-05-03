@@ -4,12 +4,12 @@
             <div class="fill-blue-arrow"></div>
             <h3>{{ 'COLLEAGUES.HEADLINE_H3' | translate }}</h3>
         </div>
-        <h1>{{ 'COLLEAGUES.HEADLINE_H1' | translate }}</h1>
+        <h1 [innerHTML]="'COLLEAGUES.HEADLINE_H1' | translate "></h1>
     </div>
     <div class="red-cards-container">
 
         <div class="red-card" data-card="leo">
-            <img class="hover-lines" src="/assets/draws/hover-lines.png" alt="">
+
             <div class="red-card-text">
                 {{ 'COLLEAGUES.QUOTE_1' | translate }}
             </div>
@@ -25,10 +25,10 @@
                     </a>
                 </div>
             </div>
+            <img class="hover-lines" src="/assets/draws/hover-lines.png" alt="">
         </div>
 
         <div class="red-card" data-card="jannis">
-            <img class="hover-lines" src="/assets/draws/hover-lines.png" alt="">
             <div class="red-card-text">
                 {{ 'COLLEAGUES.QUOTE_2' | translate }}
             </div>
@@ -44,10 +44,11 @@
                     </a>
                 </div>
             </div>
+            <img class="hover-lines" src="/assets/draws/hover-lines.png" alt="">
         </div>
 
         <div class="red-card" data-card="dora">
-            <img class="hover-lines" src="/assets/draws/hover-lines.png" alt="">
+
             <div class="red-card-text">
                 {{ 'COLLEAGUES.QUOTE_3' | translate }}
             </div>
@@ -63,6 +64,7 @@
                     </a>
                 </div>
             </div>
+            <img class="hover-lines" src="/assets/draws/hover-lines.png" alt="">
         </div>
     </div>
 </section>

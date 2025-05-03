@@ -37,7 +37,7 @@
 
   "COLLEAGUES": {
     "HEADLINE_H3": "IN THEIR WORDS:",
-    "HEADLINE_H1": "Colleagues' Thoughts",
+    "HEADLINE_H1": "Colleagues' <wbr> Thoughts",
     "QUOTE_1": "Working alongside Abbas El Mahmoud has been a fantastic experience. Their attention to detail and commitment to quality consistently elevate our projects. They have an impressive ability to transform complex ideas into user-friendly designs.",
     "NAME_LEO": "Leo Rullani",
     "JOB_LEO": "Software Engineer",
@@ -60,7 +60,7 @@
     "PLACEHOLDER_NAME": "Your name goes here",
     "PLACEHOLDER_EMAIL": "youremail@email.com",
     "PLACEHOLDER_MESSAGE": "Hello Lukas, I am interested in...",
-    "PRIVACY_POLICY": "I’ve read the <a href=\"/privacy-policy\" class=\"privacy_link\">privacy policy</a> and agree to the processing of my data as outlined.",
+    "PRIVACY_POLICY": "I’ve read the <a target='_blank' href=\"/privacy-policy\" class=\"privacy_link\">privacy policy</a> and agree to the processing of my data as outlined.",
     "BTN_SEND": "Send",
     "NAME_VALIDATION": "Please enter a vaild Name!",
     "EMAIL_VALIDATION": "Please enter a valid Email!",

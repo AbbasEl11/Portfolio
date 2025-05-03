@@ -83,11 +83,11 @@
 
   > h3 {
     margin-top: 70px;
-    font-size: 20px;
+  font-size: clamp(20px, 2.5vw, 32px);
   }
 
   > h1 {
-    font-size: 64px;
+  font-size: clamp(38px, 6vw, 64px);
     margin: 0;
     padding-bottom: 0;
   }
@@ -161,5 +161,56 @@
       }
     }
   }
+}
+}
+
+@media (max-width:1300px) {
+  .aboutme-section{
+    gap: 0;
+    justify-content: center;
+  .aboutme-content{ 
+    width: 40%;
+  >p{
+        font-size: 14px;
+  }
+}
+.picture-content{
+  width: 40%;
+  >.paper-blue,.paper-red,.paper-yellow{
+    >span{
+      font-size: 14px;
+      >img{
+        width: 30px;
+      }
+    }
+    >img{
+      width: 300px;
+    }
+  }
+  .paper-blue{
+    top: 42%;
+    left: 0;
+        >span{
+      top: 14%;
+    left: 20%;
+    }
+  }
+    .paper-red{
+    top: 51%;
+    left: 0;
+        >span{
+      top: 16%;
+      left: 15%;
+    }
+  }
+    .paper-yellow{
+    top: 32%;
+    left: 0;
+        >span{
+      top: 7%;
+    left: 20%;
+    }
+  }
+}
 }
 }

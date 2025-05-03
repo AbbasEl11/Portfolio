@@ -12,7 +12,7 @@
   margin: 0 auto;
   align-items: center;
   font-family: "Bricolage Grotesque";
-
+  
 .hero-content {
   color: white;
   display: flex;
@@ -257,8 +257,8 @@
   flex-direction: column;
   height: 272px;
   width: 100%;
-  max-width: 1680px;
-  margin: 0 auto;
+  max-width: 150px;
+  padding-left: 100px;
 
   .fill-up-container {
     position: relative;
@@ -292,6 +292,145 @@
 
     &:hover::before {
       height: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .hero-section {
+    height: auto;         
+    padding: 2rem 1rem;  
+  }
+
+  .hero-content {
+    padding-top: 120px;
+    max-width: 100%;
+  }
+
+  .title-section {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .frontend-section > h1 {
+    font-size: 64px;
+    margin-right: 0;
+    margin-top: 0.5rem;
+  }
+
+  .dev-pic {
+    margin-top: 1rem;
+    > img {
+      max-width: 150px;
+    }
+    > .visible-text {
+      top: 140px;
+      left: -120px;
+      font-size: 20px;
+    }
+  }
+
+  .hero-content > h1 {
+    font-size: 64px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .btn-GIT .touch-button {
+    width: 160px;
+    height: 36px;
+    font-size: 17px;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  .title-section {
+    padding: 0 1rem;
+  }
+
+  .frontend-section > h1 {
+    font-size: 48px;
+  }
+
+  .hero-content > h1 {
+    font-size: 48px;
+  }
+
+  .animation-button {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .animation-button:hover {
+    width: 220px;
+  }
+
+  .btn-GIT .touch-button {
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-background-container {
+    background-position: center top;
+  }
+
+  .hero-content {
+    padding-top: 60px;
+  }
+
+  .title-section {
+    flex-direction: column;
+  }
+
+  .frontend-section > h1,
+  .hero-content > h1 {
+    font-size: 32px;
+  }
+
+  .dev-pic > img {
+    max-width: 120px;
+  }
+  .dev-pic > .visible-text {
+    top: 110px;
+    left: -90px;
+    font-size: 18px;
+  }
+
+  .animation-button {
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+  }
+  .animation-button:hover {
+    width: 200px;
+  }
+
+  .btn-GIT .touch-button {
+    width: 120px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    margin-top: 1rem;
+
+    .fill-up-container {
+      margin: 0 0.5rem;
     }
   }
 }

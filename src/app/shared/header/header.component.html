@@ -3,7 +3,8 @@
         <div class="header-logo">
             <img src="assets/img/logo-initial.png" alt="">
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" [class.open]="menuOpen">
+
             <a class="aboutme" href="javascript:void(0)" (click)="scrollTo('aboutMeSection')"><span>{{
                     'HEADER.ABOUT_ME_NAV_BAR' | translate }}</span>
                 <div class="hover-fill-top"></div>
@@ -21,22 +22,50 @@
                     'HEADER.CONTACT_NAV_BAR' | translate }}</span>
                 <div class="hover-fill"></div>
             </a>
+
+
+            <div class="cl-toggle-switch">
+
+                <button (click)="onButtonClick('en')" class="EN" [style.color]="enColor">EN</button>
+                <div class="border-fill-EN"></div>
+
+                <label class="cl-switch">
+                    <input type="range" min="0" max="100" [value]="sliderValue" (input)="onSliderInput($event)"
+                        (change)="onSliderChange($event)" />
+                </label>
+
+                <button (click)="onButtonClick('de')" class="DE" [style.color]="deColor">DE</button>
+
+                <div class="border-fill-DE"></div>
+            </div>
+
+            <div class="social">
+
+                <div class="fill-up-container">
+                    <a href="https://www.linkedin.com/in/abbas-el-mahmoud-348668361/">
+                        <img src="assets/icons/linkedin.png" alt="">
+                    </a>
+                </div>
+
+                <div class="fill-up-container">
+                    <a href="https://github.com/AbbasEl11">
+                        <img src="assets/icons/github.png" alt="">
+                    </a>
+                </div>
+
+                <div class="fill-up-container">
+                    <a href="mailto:abbas-el-mahmoud@hotmail.com">
+                        <img src="assets/icons/mail.png" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="cl-toggle-switch">
-
-            <button (click)="onButtonClick('en')" class="EN" [style.color]="enColor">EN</button>
-            <div class="border-fill-EN"></div>
-
-            <label class="cl-switch">
-                <input type="range" min="0" max="100" [value]="sliderValue" (input)="onSliderInput($event)"
-                    (change)="onSliderChange($event)" />
-            </label>
-
-            <button (click)="onButtonClick('de')" class="DE" [style.color]="deColor">DE</button>
-
-            <div class="border-fill-DE"></div>
-        </div>
+        <button class="burger" [class.open]="menuOpen" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
 </div>
