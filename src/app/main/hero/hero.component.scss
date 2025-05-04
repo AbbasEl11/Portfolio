@@ -297,140 +297,167 @@
 }
 
 
-@media (max-width: 900px) {
-  .hero-section {
-    height: auto;         
-    padding: 2rem 1rem;  
-  }
+@media (max-width: 1185px) {
 
   .hero-content {
-    padding-top: 120px;
-    max-width: 100%;
+    max-width: 710px!important;
   }
 
-  .title-section {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
 
   .frontend-section > h1 {
-    font-size: 64px;
-    margin-right: 0;
-    margin-top: 0.5rem;
+    font-size: 96px !important;
   }
 
-  .dev-pic {
-    margin-top: 1rem;
-    > img {
-      max-width: 150px;
-    }
-    > .visible-text {
-      top: 140px;
-      left: -120px;
-      font-size: 20px;
-    }
-  }
 
   .hero-content > h1 {
-    font-size: 64px;
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-
-  .btn-GIT .touch-button {
-    width: 160px;
-    height: 36px;
-    font-size: 17px;
-    padding: 0.75rem 1.5rem;
+    font-size: 96px !important;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
+  .social {
+    display: none;
+  }
+
   .hero-section {
-    padding-top: 100px;
+    height: 100%;
+    >.hero-content {
+     height: 710px;
+     padding-top: 70px ;
+     max-width: 600px !important;
+     >h1{
+      margin-left: 43px;
+     }
+     .title-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+        height: 30px;
+        padding: 0;
+        .dev-pic {
+          margin: 0 auto;
+          top: 250px;
+        }
+      }
+    }
   }
+}
 
-  .title-section {
-    padding: 0 1rem;
-  }
-
-  .frontend-section > h1 {
-    font-size: 48px;
-  }
-
-  .hero-content > h1 {
-    font-size: 48px;
-  }
-
-  .animation-button {
-    width: 110px;
-    height: 40px;
-    font-size: 12px;
-    margin-top: 30px;
-  }
-
-  .animation-button:hover {
-    width: 220px;
-  }
-
-  .btn-GIT .touch-button {
-    width: 140px;
-    height: 32px;
-    font-size: 16px;
+@media (max-width: 740px) {
+.hero-section {
+    >.hero-content {
+     max-width: 430px !important;
+     align-items: flex-start;
+     >h1{
+      font-size: 74px !important;
+      margin-left: 0px !important;
+      margin-bottom: 20px !important;
+      margin-top: 0px !important; 
+     }
+     .title-section {
+        width: 78%;
+        .frontend-section > h1 {
+          font-size: 74px !important;
+          margin-right: 0px !important;
+          margin-bottom: 0px !important;
+        }
+        .dev-pic {
+          margin: 0 auto;
+          top: 280px;
+          left: 100px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .hero-background-container {
-    background-position: center top;
-  }
-
-  .hero-content {
-    padding-top: 60px;
-  }
-
-  .title-section {
-    flex-direction: column;
-  }
-
-  .frontend-section > h1,
-  .hero-content > h1 {
-    font-size: 32px;
-  }
-
-  .dev-pic > img {
-    max-width: 120px;
-  }
-  .dev-pic > .visible-text {
-    top: 110px;
-    left: -90px;
-    font-size: 18px;
-  }
-
-  .animation-button {
-    width: 100px;
-    height: 36px;
-    font-size: 12px;
-  }
-  .animation-button:hover {
-    width: 200px;
-  }
-
-  .btn-GIT .touch-button {
-    width: 120px;
-    height: 28px;
-    font-size: 14px;
-  }
-
-  .social {
-    flex-direction: row;
-    justify-content: center;
-    height: auto;
-    margin-top: 1rem;
-
-    .fill-up-container {
-      margin: 0 0.5rem;
+.hero-section {
+  z-index: 9999;
+    >.hero-content {
+     max-width: 371px !important;
+     >h1{
+      font-size: 64px !important;
+     }
+     .title-section {
+        width: 78%;
+        .frontend-section > h1 {
+          font-size: 64px !important;
+        }
+        .dev-pic {
+          top: 280px;
+          left: 80px;
+        }
+      }
     }
   }
 }
+
+@media (max-width: 410px) {
+.hero-section {
+    >.hero-content {
+     max-width: 305px !important;
+     
+     >h1{
+      font-size: 52px !important;
+     }
+     .title-section {
+        width: 77%;
+        .frontend-section {
+              height: 50px;
+        > h1 {
+          font-size: 52px !important;
+        }
+      }
+        .dev-pic {
+          top: 280px;
+          left: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+.hero-section {
+    >.hero-content {
+     max-width: 268px !important;
+     .btn-GIT{
+      .touch-button{
+        width: 150px !important;
+        height: 40px !important;
+        font-size: 15px !important;
+      }
+     }
+     
+     >h1{
+      font-size: 46px !important;
+     }
+     .title-section {
+        width: 77%;
+        .frontend-section {
+              height: 15px;
+              >.animation-button{
+                height: 35px;
+                  &:hover {
+                    width: 200px;
+                  }
+                    .hand-wave {
+                    top: -70%;
+                    left: 35px;
+                  }
+              }
+        > h1 {
+          font-size: 46px !important;
+        }
+      }
+        .dev-pic {
+          top: 280px;
+          left: 40px;
+        }
+      }
+    }
+  }
+}
+

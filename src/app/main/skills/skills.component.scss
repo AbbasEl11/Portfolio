@@ -201,154 +201,309 @@
 }
 }}
 
-// ab 1325px – erste Umbauten für kleine Desktops/large Tablets
+
 @media (max-width: 1325px) {
-  .skill-section{
+  .skill-section {
+    max-width: 960px;
 
-  .skill-content {
-    margin-top: 50px;
-  }
+    .skill-content {
+      margin-top: 50px;
+    }
 
-  .skill-endsection{
-    justify-content: center;
-    align-items: center;
-    >.skill-icons{
-        >.icon{
-            >img{
-                width: 50px;
-                height: 50px;
-            }
+    .skill-endsection {
+      justify-content: center;
+      align-items: center;
+
+      > .skill-icons {
+        > .icon {
+          > img {
+            width: 50px;
+            height: 50px;
+          }
         }
-    }
-    .pull-sticker{
+      }
+
+      .pull-sticker {
         display: flex;
-    position: relative;
-    cursor: pointer;
+        position: relative;
+        cursor: pointer;
 
-    .sticker-checkbox {
-        position: absolute;
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
+        .sticker-checkbox {
+          position: absolute;
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
         > img {
-        width: 180px;
-        height: 180px;
-        top: -70px;
-        right: -200px;
-        opacity: 0; 
-        transition: opacity 0.3s ease-in-out;
-    }
+          width: 180px;
+          height: 180px;
+          top: -70px;
+          right: -200px;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
 
-    > .img-ptp {
-        z-index: 4;
-        width: 130px;
-        height: 100px;
-        top: -25px;
-        right: -175px;
-        opacity: 1;
-    }
-  }
-}
-  @media (max-width: 1260px) {
-
-  .skills-text {
-    width: 100%;
-    margin-top: 0;
-    height: auto;
-    > img {
-      width: 100%;
-      height: auto;
-    }
-    > p {
-      position: static;
-      width: auto;
-      margin: 1rem;
-      font-size: clamp(12px, 1.5vw, 16px);
-      color: #000;
-    }
-  }
-
-  .skill-content{
-  .title-skills {
-    background-size: 200px 60px;
-    > h3 {
-      font-size: 18px;
-    }
-    > h1 {
-      font-size: 48px;
-      margin-top: 10px;
-    }
-  }
-}
-}
-
-// ab 768px – Tablet-Portrait & große Smartphones
-@media (max-width: 768px) {
-  .skill-endsection {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skill-icons {
-    gap: 30px 20px;
-    width: auto;
-    margin-top: 20px;
-    justify-content: center;
-  }
-  .skill-icons > .icon {
-    flex: 0 1 20%;
-    > img {
-      /* von 48px bis 64px fließend */
-      width: clamp(48px, 10vw, 64px);
-      height: auto;
-    }
-    > span {
-      font-size: clamp(12px, 2.5vw, 14px);
-      width: auto;
-    }
-  }
-
-  .pull-sticker {
-    margin-top: 30px;
-    > img {
-      /* von 100px bis 150px fließend */
-      width: clamp(100px, 20vw, 150px);
-      height: auto;
-      position: relative;
-      top: auto;
-      right: auto;
-      transform: rotate(10deg);
+        > .img-ptp {
+          z-index: 4;
+          width: 130px;
+          height: 100px;
+          top: -25px;
+          right: -175px;
+          opacity: 1;
+        }
+      }
     }
   }
 }
 
-// ab 480px – Smartphones
-@media (max-width: 480px) {
-  .skill-content {
-    margin-top: 30px;
-  }
+@media (max-width: 1260px) {
+  .skill-section {
+    .skill-content {
+      .title-skills {
+        background-size: 200px 60px;
+        width: 30%;
 
-  .title-skills > h3 {
-    font-size: clamp(14px, 4vw, 20px);
-  }
-  .title-skills > h1 {
-    font-size: clamp(24px, 10vw, 40px);
-  }
+        > h3 {
+          font-size: 18px;
+        }
 
-  .skills-text > p {
-    font-size: clamp(12px, 3vw, 16px);
-    margin: 0 1rem;
-  }
+        > h1 {
+          font-size: 48px;
+          margin-top: 10px;
+        }
+      }
 
-  .skill-icons {
-    gap: 20px 15px;
-  }
+      .skills-text {
+        width: 100%;
 
-  .pull-sticker > img {
-    width: clamp(80px, 25vw, 120px);
-    margin-top: 20px;
+        > img {
+          width: 100%;
+        }
+
+        > p {
+          font-size: clamp(12px, 1.5vw, 16px);
+          color: #000;
+        }
+      }
+    }
+
+    .skill-endsection {
+      .skill-icons {
+        width: 530px;
+        gap: 50px 35px;
+
+        .icon {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
   }
 }
+
+@media (max-width: 1025px) {
+  .skill-section {
+    max-width: 600px;
+
+    .skill-content {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 20px;
+
+      .title-skills {
+        width: 35%;
+        margin-right: 30px;
+      }
+
+      .skills-text {
+        margin-top: 0;
+        width: 92%;
+        align-self: center;
+      }
+    }
+
+    .skill-endsection {
+      .pull-sticker {
+        > img {
+          top: 150px;
+          right: 150px;
+        }
+
+        > .img-ptp {
+          top: 190px;
+          right: 175px;
+        }
+      }
+    }
+  }
 }
+
+@media (max-width: 590px) {
+  .skill-section {
+    max-width: 430px;
+
+    .skill-content {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 20px;
+
+      .title-skills {
+        width: 50%;
+      }
+
+      .skills-text {
+        margin-top: 0;
+        width: 92%;
+        align-self: center;
+      }
+    }
+
+    .skill-endsection {
+      .skill-icons {
+        width: 390px;
+        gap: 50px 35px;
+      }
+
+      .pull-sticker {
+        > img {
+          top: 150px;
+          right: 100px;
+        }
+
+        > .img-ptp {
+          top: 190px;
+          right: 125px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .skills-section-background {
+    height: 105dvh !important;
+  }
+
+  .skill-section {
+    max-width: 371px;
+
+    .skill-content {
+      padding: 0;
+
+      .title-skills {
+        width: 55%;
+        margin-right: 20px;
+        height: 150px;
+        background-size: 160px 45px;
+
+        > h1 {
+          font-size: 40px;
+        }
+
+        > h3 {
+          font-size: 16px;
+        }
+      }
+
+      .skills-text {
+        margin-top: 0;
+        width: 92%;
+        align-self: center;
+
+        > img {
+          height: 150px;
+        }
+      }
+    }
+
+    .skill-endsection {
+      .skill-icons {
+        width: 300px;
+        gap: 20px 58px;
+
+        .icon {
+          flex: none;
+        }
+      }
+
+      .pull-sticker {
+        > img {
+          top: 130px;
+          right: 0;
+        }
+
+        > .img-ptp {
+          top: 170px;
+          right: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .skill-section {
+    max-width: 305px;
+
+    .skill-content {
+      padding: 0;
+
+      .title-skills {
+        width: 55%;
+        margin-right: 20px;
+        height: 150px;
+        background-size: 160px 45px;
+
+        > h1 {
+          font-size: 40px;
+        }
+
+        > h3 {
+          font-size: 16px;
+        }
+      }
+
+      .skills-text {
+        margin-top: 0;
+        width: 92%;
+        align-self: center;
+
+        > img {
+          height: 150px;
+        }
+      }
+    }
+
+    .skill-endsection {
+      .skill-icons {
+        width: 250px;
+        gap: 20px 42px;
+
+        .icon {
+          > img {
+            width: 40px;
+            height: 40px;
+            filter: grayscale(0);
+          }
+
+          > span {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .pull-sticker {
+        > img {
+          top: 130px;
+          right: 0;
+        }
+
+        > .img-ptp {
+          top: 170px;
+          right: 25px;
+        }
+      }
+    }
+  }
 }

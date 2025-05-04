@@ -152,14 +152,24 @@
   display: flex;
   position: relative;
   left: 100px;
-
+  padding: 0;
   > img {
     width: 100px;
     height: 200px;
     object-fit: cover;
     z-index: 600;
+    cursor: default;
+    transition: filter 0.5s ease;
+        &:hover{
+                filter: 
+                sepia(100%)    
+                saturate(500%) 
+                hue-rotate(10deg) 
+                brightness(1.1); 
+        }
+    }
   }
-}
+
 
 .cl-toggle-switch {
   position: relative;
@@ -414,4 +424,9 @@
       }
     }
   }
+
+    .header-logo {
+    left: 15px;
+  }
 }
+
