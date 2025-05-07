@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
+import { FooterComponent } from '../footer/footer.component';
+
 
 @Component({
   selector: 'app-privacy-policy',
-  imports: [MatDialogModule,MatCardModule,CommonModule,TranslateModule],
+  imports: [MatDialogModule,MatCardModule,CommonModule,TranslateModule,FooterComponent],
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })

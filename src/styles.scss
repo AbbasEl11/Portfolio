@@ -1,7 +1,8 @@
-body{
+html,body{
     margin: 0;
     font-family: "Bricolage Grotesque";
     overflow-x: hidden;
+    box-sizing: border-box;
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -12,6 +13,7 @@ input:-webkit-autofill:active {
 }
 }
 
+
 @font-face {
     font-family: "Bricolage Grotesque";
     src: url("assets/fonts/BricolageGrotesque/BricolageGrotesque-Bold.ttf") format("truetype");
@@ -21,7 +23,7 @@ input:-webkit-autofill:active {
 
 @font-face {
     font-family: "Bricolage Grotesque";
-    src: url("assets/fonts/BricolageGrotesque/BricolageGrotesque-regular.ttf") format("truetype");
+    src: url("assets/fonts/BricolageGrotesque/BricolageGrotesque-Regular.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }

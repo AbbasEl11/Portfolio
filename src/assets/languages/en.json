@@ -45,14 +45,14 @@
     "NAME_JANNIS": "Jannis Meyer",
     "JOB_JANNIS": "Fullstack Developer",
     "QUOTE_3": "I’ve had the pleasure of collaborating with Abbas El Mahmoud on several projects. Their innovative approach and technical expertise have been invaluable. They always stay updated with the latest trends, ensuring our work remains cutting-edge and effective.",
-    "NAME_DORA": "Dora Teleksi",
+    "NAME_DORA": "Dora Telekesi",
     "JOB_DORA": "Frontend Developer",
     "PROFILE_LINK": "Profile"
   },
   
   "CONTACT": {
     "HEADLINE_H3": "CONTACT ME",
-    "HEADLINE_H1": "Ready to work together?",
+    "HEADLINE_H1": "Ready to work <wbr> together?",
     "INFO_PARAGRAPH": "I warmly invite you to reach out to me! I am particularly interested in roles that allow me to apply my front-end skills to innovative projects. With my expertise and passion for continuous learning, I am confident that I can make a valuable contribution. I bring not only technical knowledge but also creativity and teamwork. Let’s collaborate on exciting challenges and achieve extraordinary results together!",
     "LABEL_NAME": "What's your name?",
     "LABEL_EMAIL": "What's your email?",
@@ -60,7 +60,7 @@
     "PLACEHOLDER_NAME": "Your name goes here",
     "PLACEHOLDER_EMAIL": "youremail@email.com",
     "PLACEHOLDER_MESSAGE": "Hello Lukas, I am interested in...",
-    "PRIVACY_POLICY": "I’ve read the <a target='_blank' href=\"/privacy-policy\" class=\"privacy_link\">privacy policy</a> and agree to the processing of my data as outlined.",
+    "PRIVACY_POLICY": "I’ve read the <a href=\"/privacy-policy\" class=\"privacy_link\">privacy policy</a> and agree to the processing of my data as outlined.",
     "BTN_SEND": "Send",
     "NAME_VALIDATION": "Please enter a vaild Name!",
     "EMAIL_VALIDATION": "Please enter a valid Email!",
@@ -71,7 +71,8 @@
     "NAME_VALIDATION_THIRD": "The name must not contain numbers or special characters!",
     "MAIL_SEND": "Your message has been successfully sent.",
     "MAIL_SEND_TY": "Thank you!",
-    "PRIVACY_VALIDATION": "Please accept the privacy policy."
+    "PRIVACY_VALIDATION": "Please accept the privacy policy.",
+    "LEGAL_NOTICE": "Legal Notice"
 
   },
   "PROJECT_DETAILS_": {

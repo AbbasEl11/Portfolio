@@ -232,9 +232,6 @@
   .red-cards-container {
     --overlap: 11rem;
     padding-inline: 2rem;
-
-    .red-card {
-    }
   }
 }
 
@@ -345,6 +342,9 @@
     .red-card {
       width: 300px !important;
       height: 343px;
+      .red-card-text {
+        font-size: 12px !important;
+      }
 
       .red-card-content-bottom {
         .profile-content {

@@ -1,5 +1,4 @@
 <section class="project-details-section">
-
     <div class="all-content" *ngIf="project ">
         <div class="go-back-container">
             <a href=""><img src="/assets/draws/red-arrow.png" alt=""><b>{{ 'PROJECT_DETAILS_.RETURN'|translate}}</b></a>
@@ -36,8 +35,8 @@
                 <img [src]="project.imageUrl" [alt]="project.title">
 
                 <div class="btn-image-content">
-                    <a href="{{ project.gitHubUrl }}">GitHub</a>
-                    <a href="{{ project.liveTestUrl }}">Live Test</a>
+                    <a target="_blank" href="{{ project.gitHubUrl }}">GitHub</a>
+                    <a target="_blank" href="{{ project.liveTestUrl }}">Live Test</a>
                 </div>
 
                 <div class="next-project-container">

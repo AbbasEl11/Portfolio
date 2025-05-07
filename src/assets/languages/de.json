@@ -45,14 +45,14 @@
     "NAME_JANNIS": "Jannis Meyer",
     "JOB_JANNIS": "Fullstack Developer",
     "QUOTE_3": "Ich hatte das Vergnügen, mit Abbas El Mahmoud an mehreren Projekten zu arbeiten. Sein innovativer Ansatz und sein technisches Fachwissen sind äußerst wertvoll. Er bleibt stets auf dem Laufenden mit den neuesten Trends, sodass unsere Arbeit immer hochmodern und effektiv bleibt.",
-    "NAME_DORA": "Dora Teleksi",
+    "NAME_DORA": "Dora Telekesi",
     "JOB_DORA": "Frontend Developer",
     "PROFILE_LINK": "Profil"
   },
 
   "CONTACT": {
     "HEADLINE_H3": "KONTAKTIERE MICH",
-    "HEADLINE_H1": "Bereit für eine Zusammenarbeit?",
+    "HEADLINE_H1": "Bereit zusammen <wbr> zu arbeiten?",
     "INFO_PARAGRAPH": "Ich lade euch herzlich ein, mich zu kontaktieren! Ich interessiere mich besonders für Rollen, die es mir ermöglichen, meine Front-End-Fähigkeiten in innovativen Projekten einzusetzen. Mit meinem Fachwissen und meiner Leidenschaft für kontinuierliches Lernen bin ich überzeugt, dass ich einen wertvollen Beitrag leisten kann. Ich bringe nicht nur technisches Know-how, sondern auch Kreativität und Teamgeist mit. Lasst uns gemeinsam an spannenden Herausforderungen arbeiten und außergewöhnliche Ergebnisse erzielen!",
     "LABEL_NAME": "Wie ist dein Name?",
     "LABEL_EMAIL": "Wie lautet deine E-Mail-Adresse?",
@@ -60,7 +60,7 @@
     "PLACEHOLDER_NAME": "Dein Name hier",
     "PLACEHOLDER_EMAIL": "DeineE-Mail@beispiel.com",
     "PLACEHOLDER_MESSAGE": "Hallo Lukas, ich bin interessiert an...",
-    "PRIVACY_POLICY": "Ich habe die <a target='_blank' href=\"/privacy-policy\" class=\"privacy_link\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "PRIVACY_POLICY": "Ich habe die <a href=\"/privacy-policy\" class=\"privacy_link\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
     "BTN_SEND": "Senden",
     "NAME_VALIDATION": "Bitte einen gültigen Namen eingeben!",
     "EMAIL_VALIDATION": "Bitte eine gültige E-Mail-Adresse eingeben!",
@@ -70,7 +70,8 @@
     "NAME_VALIDATION_THIRD": " Der Name darf keine Zahlen oder Sonderzeichen enthalten!",
     "MAIL_SEND": "Ihre Nachricht wurde erfolgreich versendet.",
     "MAIL_SEND_TY": "Vielen Dank!",
-    "PRIVACY_VALIDATION": "Bitte akzeptiere die Datenschutzbestimmungen."
+    "PRIVACY_VALIDATION": "Bitte akzeptiere die Datenschutzbestimmungen.",
+    "LEGAL_NOTICE": "Impressum"
   },
     "PROJECT_DETAILS_": {
     "RETURN": "Gehe zurück",

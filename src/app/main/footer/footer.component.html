@@ -1,7 +1,7 @@
 <div class="footer-section">
     <footer>
         <div class="footer-logo">
-            <img src="assets/img/logo-initial.png" alt="">
+            <a href="#" (click)="scrollToTop($event)"><img src="assets/img/logo-initial.png" alt=""></a>
         </div>
 
         <div class="copyright-content">
@@ -9,7 +9,8 @@
         </div>
 
         <div class="nav-bar">
-            <a class="aboutme" [routerLink]="['/legal-notice']"><span>Legal Notice</span>
+            <a class="aboutme mobile" [routerLink]="['/legal-notice']"><span>{{ 'CONTACT.LEGAL_NOTICE' | translate
+                    }}</span>
                 <div class="hover-fill"></div>
             </a>
 

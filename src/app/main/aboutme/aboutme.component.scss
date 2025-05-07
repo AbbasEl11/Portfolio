@@ -323,6 +323,10 @@
 
     .aboutme-content {
       width: 100%;
+      .fill-blue-line{
+        width: 180px;
+        background-size: 180px 15px ;
+      }
     }
 
     .picture-content {
@@ -563,7 +567,7 @@
       width: 100%;
 
       .btn-lets-talk {
-        height: 100px;
+        height: 130px;
         .talk-button {
           font-size: 16px;
           width: 120px;

@@ -4,7 +4,6 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    height: 100dvh;
 }
 
 .skill-section{
@@ -12,7 +11,7 @@
     margin: 0 auto;
     max-width: 1220px;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     font-family: "Bricolage Grotesque";
     flex-direction: column;
 
@@ -208,6 +207,9 @@
 
     .skill-content {
       margin-top: 50px;
+      .title-skills{
+        width: 27%;
+      }
     }
 
     .skill-endsection {
@@ -381,12 +383,9 @@
 }
 
 @media (max-width: 440px) {
-  .skills-section-background {
-    height: 105dvh !important;
-  }
-
   .skill-section {
     max-width: 371px;
+    height: 255vw !important;
 
     .skill-content {
       padding: 0;
@@ -424,6 +423,9 @@
 
         .icon {
           flex: none;
+          >img{
+            filter: grayscale(0);
+          }
         }
       }
 
@@ -449,6 +451,7 @@
     .skill-content {
       padding: 0;
 
+
       .title-skills {
         width: 55%;
         margin-right: 20px;
@@ -470,7 +473,7 @@
         align-self: center;
 
         > img {
-          height: 150px;
+          height: 160px;
         }
       }
     }
@@ -484,7 +487,7 @@
           > img {
             width: 40px;
             height: 40px;
-            filter: grayscale(0);
+
           }
 
           > span {

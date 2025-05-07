@@ -15,8 +15,8 @@ export class ProjectService {
     duration: 'PROJECT_DETAILS.JOIN.DURATION',
     imageUrl: '/assets/img/join-board.jpg',
     route: '/projects/join',
-    gitHubUrl: 'https://github.com/AbbasEl11/join',
-    liveTestUrl: 'http://abbas-el-mahmoud.com/join/index.html',
+    gitHubUrl: 'https://github.com/leo-rullani/join',
+    liveTestUrl: 'http://abbas-el-mahmoud.com/join/html/login.html',
     materials: [
       { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
       { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },

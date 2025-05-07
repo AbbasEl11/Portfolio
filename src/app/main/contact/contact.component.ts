@@ -59,10 +59,14 @@ export class ContactComponent implements OnInit {
   }
 
   onAttemptSend(): void {
+    this.submitted = true;
+    this.myForm.markAllAsTouched();
     if (!this.myForm.get('privacy')?.value) {
       this.privacyError = true;
     } else {
       this.privacyError = false;
+    }
+    if (this.myForm.valid) {
       this.onSubmit();
     }
   }

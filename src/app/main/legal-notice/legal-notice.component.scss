@@ -12,9 +12,9 @@
   justify-content: center;
 
   .go-back-container {
-    position: fixed;
+    position: absolute;
     top: 150px;
-    left: 150px;
+    right: 190px;
     display: flex;
     align-items: center;
     z-index: 20;
@@ -84,4 +84,32 @@
 
 .legal-content {
   margin-left: 1.5rem;
+}
+
+.footer{
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  padding-top: 220px;
+}
+
+@media (max-width: 1025px) {
+  .legal-notice-section{
+    .go-back-container {
+    top: 100px;
+    right: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .legal-notice-section{
+    .go-back-container {
+    top: 100px;
+    right: 20px;
+      >a{
+        font-size: 0;
+      }
+    }
+  }
 }

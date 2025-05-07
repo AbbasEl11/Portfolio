@@ -3,7 +3,7 @@
         <div class="text-content">
             <div class="contact-header">
                 <h3>{{ 'CONTACT.HEADLINE_H3' | translate }}</h3>
-                <h1>{{ 'CONTACT.HEADLINE_H1' | translate }}</h1>
+                <h1 [innerHTML]="'CONTACT.HEADLINE_H1' | translate"></h1>
             </div>
 
             <p>{{ 'CONTACT.INFO_PARAGRAPH' | translate }}</p>
@@ -112,7 +112,7 @@
 
             <!-- SUBMIT BUTTON -->
             <div class="btn-send">
-                <button type="button" class="send-button" [class.disabled-btn]="!myForm.get('privacy')?.value"
+                <button type="button" class="send-button" [class.disabled-btn]="!myForm.valid"
                     (click)="onAttemptSend()">
                     {{ 'CONTACT.BTN_SEND' | translate }}
                 </button>

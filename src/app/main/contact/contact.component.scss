@@ -293,3 +293,179 @@
       margin-bottom: 20px;
 }
 }
+
+@media (max-width: 1250px) {
+  .contact-section {
+    max-width: 1000px;
+
+    .text-content {
+      width: 460px;
+
+      .fill-orange-arrow {
+        left: 200px;
+      }
+    }
+
+    .contact-form {
+      width: 460px;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .contact-background {
+    height: 100%;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    max-width: 500px;
+
+    .text-content {
+      width: 100%;
+
+      .fill-orange-arrow {
+        left: -15px;
+        top: 510px;
+        background-size: 260px 36px;
+      }
+    }
+
+    .contact-form {
+      margin-top: 0;
+      margin-bottom: 320px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-background {
+    height: 100%;
+  }
+
+  .contact-section {
+    max-width: 400px;
+
+    .text-content {
+      width: 100%;
+
+      .contact-header {
+        width: 100%;
+        > h3 {
+          font-size: 18px;
+        }
+
+        > h1 {
+          font-size: 54px;
+        }
+      }
+
+      .fill-orange-arrow {
+        left: -30px;
+        top: 460px;
+        background-size: 220px 36px;
+      }
+    }
+
+    .contact-form {
+      margin-top: 0;
+      margin-bottom: 320px;
+      width: 100%;
+
+      .form-group {
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .contact-background {
+    height: 100%;
+  }
+
+  .contact-section {
+    max-width: 350px;
+
+    .text-content {
+      width: 100%;
+
+      .contact-header {
+        > h3 {
+          font-size: 16px;
+        }
+
+        > h1 {
+          font-size: 45px;
+        }
+      }
+
+      .fill-orange-arrow {
+        left: -60px;
+        top: 450px;
+        background-size: 180px 36px;
+      }
+    }
+
+    .contact-form {
+      .error-message{
+        >small{
+          font-size: 9px;
+        };
+      }
+      .form-group {
+        > label {
+          font-size: 16px;
+        }
+
+        > input,
+        > textarea {
+          font-size: 16px;
+        }
+      }
+
+      .checkbox-group {
+        .checkbox-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .contact-background {
+    height: 100%;
+  }
+
+  .contact-section {
+    max-width: 280px;
+
+    .text-content {
+      width: 100%;
+
+      > p {
+        font-size: 14px;
+      }
+
+      .contact-header {
+        > h3 {
+          font-size: 16px;
+        }
+
+        > h1 {
+          font-size: 40px;
+        }
+      }
+
+      .fill-orange-arrow {
+        left: -90px;
+        top: 470px;
+        background-size: 120px 36px;
+      }
+    }
+  }
+}

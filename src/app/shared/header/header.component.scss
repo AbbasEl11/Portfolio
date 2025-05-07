@@ -84,6 +84,14 @@
       margin: 0 auto;
       height: 45px;
 
+      .black-link {
+        color: black;
+        position: relative;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        font-weight: 600;
+      }
       .social {
         display: none;
         gap: 20px;
@@ -95,6 +103,7 @@
         text-decoration: none;
         font-size: 18px;
         padding: 10px 15px;
+        font-weight: 600;
 
         .hover-fill-top {
           position: absolute;
@@ -153,22 +162,23 @@
   position: relative;
   left: 100px;
   padding: 0;
+  z-index: 0;
   > img {
     width: 100px;
     height: 200px;
     object-fit: cover;
-    z-index: 600;
+    z-index: 0;
     cursor: default;
     transition: filter 0.5s ease;
-        &:hover{
+    
+            &:hover{
                 filter: 
                 sepia(100%)    
                 saturate(500%) 
                 hue-rotate(10deg) 
                 brightness(1.1); 
         }
-    }
-  }
+  }}
 
 
 .cl-toggle-switch {

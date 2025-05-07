@@ -3,6 +3,7 @@
   background-image: url(/assets/img/background-1.png);
   background-size: cover;
   background-position: center bottom;
+  height: 100vh;
 }
 
 .hero-section{
@@ -269,7 +270,7 @@
     margin-bottom: 10px;
 
     > a {
-      cursor: auto;
+      cursor: pointer;
 
       > img {
         display: block;
@@ -388,6 +389,11 @@
         .dev-pic {
           top: 280px;
           left: 80px;
+          max-width: 300px;
+          width: 100%;
+          .visible-text {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -413,6 +419,12 @@
         .dev-pic {
           top: 280px;
           left: 50px;
+          .visible-text::before {
+            width: 100px;
+          }
+          .visible-text::after {
+            width: 100px;
+          }
         }
       }
     }
