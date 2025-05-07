@@ -1,11 +1,11 @@
-<h2 mat-dialog-title class="dialog-title">
-    {{ 'CONTACT.MAIL_SEND_TY' | translate }}
-</h2>
+<div class="toast " #toast>
+    <div class="toast-content">
+        <i class="fas fa-solid fa-check check"></i>
 
-<div mat-dialog-content>
-    <p>{{ 'CONTACT.MAIL_SEND' | translate }}</p>
-</div>
-
-<div mat-dialog-actions>
-    <button mat-button color="primary" (click)="close()">OK</button>
+        <div class="message">
+            <span class="text text-1">{{ 'CONTACT.MAIL_SEND_TY' | translate }}</span>
+            <span class="text text-2">{{ 'CONTACT.MAIL_SEND' | translate }}</span>
+        </div>
+    </div>
+    <div class="progress" #progress></div>
 </div>

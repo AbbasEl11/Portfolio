@@ -1,92 +1,95 @@
 <div class="legal-notice-section">
     <!-- legal-notice.component.html -->
-    <div class="go-back-container">
-        <a href=""><img src="/assets/draws/red-arrow.png" alt=""><b>{{ 'PROJECT_DETAILS_.RETURN'|translate}}</b></a>
+    <div class="legal-all-content">
+        <div class="go-back-container">
+            <a href="home" [routerLink]="['/']"><img src="/assets/draws/red-arrow.png" alt=""><b>{{
+                    'PROJECT_DETAILS_.RETURN'|translate}}</b></a>
+        </div>
+        <mat-card class="legal-card">
+            <mat-card-header>
+                <mat-card-title>{{ 'LEGAL.TITLE' | translate }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <!-- 1. Information pursuant to § 5 TMG -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION1_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>
+                            {{ 'LEGAL.SECTION1_NAME' | translate }}<br>
+                            {{ 'LEGAL.SECTION1_STREET' | translate }}<br>
+                            {{ 'LEGAL.SECTION1_POSTALCITY' | translate }}<br>
+                            {{ 'LEGAL.SECTION1_COUNTRY' | translate }}
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. Contact -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION2_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>
+                            {{ 'LEGAL.SECTION2_PHONE_LABEL' | translate }}
+                            {{ 'LEGAL.SECTION2_PHONE' | translate }}<br>
+                            {{ 'LEGAL.SECTION2_EMAIL_LABEL' | translate }}
+                            <a href="mailto:{{ 'LEGAL.SECTION2_EMAIL' | translate }}">
+                                {{ 'LEGAL.SECTION2_EMAIL' | translate }}
+                            </a>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 4. Professional regulations -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION4_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>{{ 'LEGAL.SECTION4_TEXT' | translate }}</p>
+                    </div>
+                </section>
+
+                <!-- 5. EU Online Dispute Resolution -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION5_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>
+                            {{ 'LEGAL.SECTION5_TEXT1' | translate }}<br>
+                            <a href="{{ 'LEGAL.SECTION5_LINK_URL' | translate }}" target="_blank" rel="noopener">
+                                {{ 'LEGAL.SECTION5_LINK_TEXT' | translate }}
+                            </a><br>
+                            {{ 'LEGAL.SECTION5_TEXT2' | translate }}
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 6. Liability for content -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION6_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>{{ 'LEGAL.SECTION6_TEXT1' | translate }}</p>
+                        <p>{{ 'LEGAL.SECTION6_TEXT2' | translate }}</p>
+                    </div>
+                </section>
+
+                <!-- 7. Liability for links -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION7_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>{{ 'LEGAL.SECTION7_TEXT1' | translate }}</p>
+                        <p>{{ 'LEGAL.SECTION7_TEXT2' | translate }}</p>
+                    </div>
+                </section>
+
+                <!-- 8. Copyright -->
+                <section class="legal-section">
+                    <h3 class="legal-header">{{ 'LEGAL.SECTION8_TITLE' | translate }}</h3>
+                    <div class="legal-content">
+                        <p>{{ 'LEGAL.SECTION8_TEXT1' | translate }}</p>
+                        <p>{{ 'LEGAL.SECTION8_TEXT2' | translate }}</p>
+                    </div>
+                </section>
+            </mat-card-content>
+        </mat-card>
     </div>
-    <mat-card class="legal-card">
-        <mat-card-header>
-            <mat-card-title>{{ 'LEGAL.TITLE' | translate }}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <!-- 1. Information pursuant to § 5 TMG -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION1_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>
-                        {{ 'LEGAL.SECTION1_NAME' | translate }}<br>
-                        {{ 'LEGAL.SECTION1_STREET' | translate }}<br>
-                        {{ 'LEGAL.SECTION1_POSTALCITY' | translate }}<br>
-                        {{ 'LEGAL.SECTION1_COUNTRY' | translate }}
-                    </p>
-                </div>
-            </section>
-
-            <!-- 2. Contact -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION2_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>
-                        {{ 'LEGAL.SECTION2_PHONE_LABEL' | translate }}
-                        {{ 'LEGAL.SECTION2_PHONE' | translate }}<br>
-                        {{ 'LEGAL.SECTION2_EMAIL_LABEL' | translate }}
-                        <a href="mailto:{{ 'LEGAL.SECTION2_EMAIL' | translate }}">
-                            {{ 'LEGAL.SECTION2_EMAIL' | translate }}
-                        </a>
-                    </p>
-                </div>
-            </section>
-
-            <!-- 4. Professional regulations -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION4_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>{{ 'LEGAL.SECTION4_TEXT' | translate }}</p>
-                </div>
-            </section>
-
-            <!-- 5. EU Online Dispute Resolution -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION5_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>
-                        {{ 'LEGAL.SECTION5_TEXT1' | translate }}<br>
-                        <a href="{{ 'LEGAL.SECTION5_LINK_URL' | translate }}" target="_blank" rel="noopener">
-                            {{ 'LEGAL.SECTION5_LINK_TEXT' | translate }}
-                        </a><br>
-                        {{ 'LEGAL.SECTION5_TEXT2' | translate }}
-                    </p>
-                </div>
-            </section>
-
-            <!-- 6. Liability for content -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION6_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>{{ 'LEGAL.SECTION6_TEXT1' | translate }}</p>
-                    <p>{{ 'LEGAL.SECTION6_TEXT2' | translate }}</p>
-                </div>
-            </section>
-
-            <!-- 7. Liability for links -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION7_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>{{ 'LEGAL.SECTION7_TEXT1' | translate }}</p>
-                    <p>{{ 'LEGAL.SECTION7_TEXT2' | translate }}</p>
-                </div>
-            </section>
-
-            <!-- 8. Copyright -->
-            <section class="legal-section">
-                <h3 class="legal-header">{{ 'LEGAL.SECTION8_TITLE' | translate }}</h3>
-                <div class="legal-content">
-                    <p>{{ 'LEGAL.SECTION8_TEXT1' | translate }}</p>
-                    <p>{{ 'LEGAL.SECTION8_TEXT2' | translate }}</p>
-                </div>
-            </section>
-        </mat-card-content>
-    </mat-card>
-</div>
-<div class="footer">
-    <app-footer></app-footer>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
 </div>

@@ -3,14 +3,13 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { MatDialog } from '@angular/material/dialog';
 import { MailSendedComponent } from '../mail-sended/mail-sended.component';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslateModule, ReactiveFormsModule, CommonModule],
+  imports: [TranslateModule, ReactiveFormsModule, CommonModule,MailSendedComponent],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   encapsulation: ViewEncapsulation.None,
@@ -18,6 +17,7 @@ import { MailSendedComponent } from '../mail-sended/mail-sended.component';
 export class ContactComponent implements OnInit {
   myForm!: FormGroup;
 
+  showToast = false;
   privacyError = false;
   submitted = false;
   editingName = false;
@@ -26,8 +26,7 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private http: HttpClient,
-    private dialog: MatDialog
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -94,11 +93,8 @@ private sendMail(data: any): void {
     next: () => {
       this.myForm.reset();
       this.submitted = false;
-
-      this.dialog.open(MailSendedComponent, {
-        width: '400px',
-        disableClose: false
-      });
+      this.showToast = true;
+       setTimeout(() => this.showToast = false, 6000);
     },
     error: (error) => {
       console.error('error:', error);

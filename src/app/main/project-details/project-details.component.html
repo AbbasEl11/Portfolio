@@ -1,7 +1,8 @@
 <section class="project-details-section">
     <div class="all-content" *ngIf="project ">
         <div class="go-back-container">
-            <a href=""><img src="/assets/draws/red-arrow.png" alt=""><b>{{ 'PROJECT_DETAILS_.RETURN'|translate}}</b></a>
+            <a href="home" [routerLink]="['/']"><img src="/assets/draws/red-arrow.png" alt=""><b>{{
+                    'PROJECT_DETAILS_.RETURN'|translate}}</b></a>
         </div>
 
         <div class="project-details-content">

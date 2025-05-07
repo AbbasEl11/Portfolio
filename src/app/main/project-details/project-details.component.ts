@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router, RouterModule } from '@angular/router';
 import { Project } from '../../models/project.model';
 import { ProjectService } from '../../services/project.service';
 import { CommonModule } from '@angular/common';
@@ -7,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-details',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule,RouterModule],
   templateUrl: './project-details.component.html',
   styleUrls: ['./project-details.component.scss']
 })
