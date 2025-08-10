@@ -41,22 +41,22 @@ export class ProjectService {
       { name: 'JavaScript', iconUrl: '/assets/icons/Property1=Js.png' },
     ]
   },
-    {
-    id: 'dabubble',
-    title: 'DABubble',
-    description: 'PROJECT_DETAILS.DABUBBLE.DESCRIPTION',
-    implementDetails: 'PROJECT_DETAILS.DABUBBLE.IMPLEMENTDETAILS',
-    duration: 'PROJECT_DETAILS.DABUBBLE.DURATION',
-    imageUrl: '/assets/img/dabubble.jpg',
-    route: '/projects/dabubble',
-    gitHubUrl: 'https://github.com/AbbasEl11/dabubble',
-    liveTestUrl: 'http://abbas-el-mahmoud.com/dabubble/index.html',
-    materials: [
-      { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
-      { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
-      { name: 'JavaScript', iconUrl: '/assets/icons/Property1=Js.png' },
-    ]
-  },
+  //  {
+  //  id: 'dabubble',
+  //  title: 'DABubble',
+  //  description: 'PROJECT_DETAILS.DABUBBLE.DESCRIPTION',
+  //  implementDetails: 'PROJECT_DETAILS.DABUBBLE.IMPLEMENTDETAILS',
+  //  duration: 'PROJECT_DETAILS.DABUBBLE.DURATION',
+  //  imageUrl: '/assets/img/dabubble.jpg',
+  //  route: '/projects/dabubble',
+  //  gitHubUrl: 'https://github.com/AbbasEl11/dabubble',
+  //  liveTestUrl: 'http://abbas-el-mahmoud.com/dabubble/index.html',
+  //  materials: [
+  //    { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
+  //    { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
+  //    { name: 'JavaScript', iconUrl: '/assets/icons/Property1=Js.png' },
+  //  ]
+  //},
 ];
 
   getProjects(): Project[] {

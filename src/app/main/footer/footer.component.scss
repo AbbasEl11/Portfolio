@@ -7,7 +7,7 @@
     background: transparent;
     font-family: "Bricolage Grotesque";
     bottom: 0;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -199,6 +199,14 @@ footer {
   }
 }
 
+@media (max-width: 1470px) {
+  .footer-section{
+    max-width: 1200px;
+    footer{
+      max-width: 1200px;
+    }
+  }
+}
 
 @media (max-width: 1250px) {
   .footer-section{
