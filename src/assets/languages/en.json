@@ -98,6 +98,11 @@
       "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       "IMPLEMENTDETAILS": "In the 'Join' project, I developed a platform that enhances collaboration and communication among users. I used JavaScript and Node.js, and worked with the Firebase API to store inputs and ensure a reliable database. Additionally, I implemented user login and registration features to enhance the platforms security. Through close collaboration in an agile team, we were able to adapt the platform flexibly and continuously improve it.",
       "DURATION": "4 weeks"
+    },
+    "MYGARAGE": {
+      "DESCRIPTION": "Fullstack vehicle management app with an Ionic + React frontend and Django REST API backend. Manage your entire garage from any device, including adding cars, uploading images, and browsing details.",
+      "IMPLEMENTDETAILS": "In the 'MyGarage' project, I developed a responsive fullstack application for managing vehicles. The frontend is built with Ionic and React, providing a mobile-first, app-like experience that works seamlessly across devices. The backend, implemented with Django REST Framework, offers secure and well-documented API endpoints (Swagger UI) for all CRUD operations. Users can add new vehicles with detailed specifications, upload multiple images, and view or update entries from the inventory. Features include a modern UI with glassmorphism design elements, mobile-friendly navigation with a hamburger menu, and demo data fixtures for quick setup. The project showcases integration between a JavaScript-based frontend and a Python backend, along with best practices for CORS configuration, responsive layouts, and API documentation.",
+      "DURATION": "5 weeks"
     }
   },
   "PRIVACY": {

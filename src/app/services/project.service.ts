@@ -40,6 +40,26 @@ export class ProjectService {
       { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
       { name: 'JavaScript', iconUrl: '/assets/icons/Property1=Js.png' },
     ]
+    },
+    {
+    id: 'mygarage',
+    title: 'MyGarage App',
+    description: 'PROJECT_DETAILS.MYGARAGE.DESCRIPTION',
+    implementDetails: 'PROJECT_DETAILS.MYGARAGE.IMPLEMENTDETAILS',
+    duration: 'PROJECT_DETAILS.MYGARAGE.DURATION',
+    imageUrl: '/assets/img/mygarage.png',
+    route: '/projects/mygarage', 
+    gitHubUrl: 'https://github.com/AbbasEl11/mygarage-app',
+    liveTestUrl: 'http://abbas-el-mahmoud.com/mygarage-app/index.html',
+    materials: [
+      { name: 'Ionic', iconUrl: '/assets/icons/Ionic_Logo.svg' },
+      { name: 'React', iconUrl: '/assets/icons/React.png' },
+      { name: 'TypeScript', iconUrl: '/assets/icons/Property1=Ts.png' },
+      { name: 'Django', iconUrl: '/assets/icons/django-logo-negative.svg' },
+      { name: 'REST-API', iconUrl: '/assets/icons/Property1=Rest-Api.png' },
+      { name: 'Python', iconUrl: '/assets/icons/Python-logo-notext.svg' },
+      { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
+    ]
   },
   //  {
   //  id: 'dabubble',
