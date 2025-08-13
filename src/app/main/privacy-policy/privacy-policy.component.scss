@@ -60,7 +60,7 @@
 
 
   mat-card-title {
-    font-size: 2.45rem;
+    font-size: 2.1rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
   }
@@ -179,3 +179,8 @@ body {
   background-color: #000000 !important;
 
 }
+
+.mat-mdc-card-content:last-child {
+    padding-bottom: 16px;
+    padding: 60px;
+  }

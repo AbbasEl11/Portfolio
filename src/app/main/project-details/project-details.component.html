@@ -37,7 +37,7 @@
 
                 <div class="btn-image-content">
                     <a target="_blank" href="{{ project.gitHubUrl }}">GitHub</a>
-                    <a target="_blank" href="{{ project.liveTestUrl }}">Live Test</a>
+                    <a target="_blank" [href]=" project.liveTestUrl " (click)="$event.stopPropagation()">Live Test</a>
                 </div>
 
                 <div class="next-project-container">

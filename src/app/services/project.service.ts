@@ -16,7 +16,7 @@ export class ProjectService {
     imageUrl: '/assets/img/join-board.jpg',
     route: '/projects/join',
     gitHubUrl: 'https://github.com/leo-rullani/join',
-    liveTestUrl: 'http://abbas-el-mahmoud.com/join/html/login.html',
+    liveTestUrl: 'https://abbas-el-mahmoud.com/join/html/login.html',
     materials: [
       { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
       { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
@@ -34,7 +34,7 @@ export class ProjectService {
     imageUrl: '/assets/img/elpollo.jpg',
     route: '/projects/elpollo', 
     gitHubUrl: 'https://github.com/AbbasEl11/El-Pollo-Loco',
-    liveTestUrl: 'http://abbas-el-mahmoud.com/elpolloloco/index.html',
+    liveTestUrl: 'https://abbas-el-mahmoud.com/elpolloloco/index.html',
     materials: [
       { name: 'HTML', iconUrl: '/assets/icons/Property1=HTML.png' },
       { name: 'CSS', iconUrl: '/assets/icons/Property1=CSS.png' },
@@ -50,7 +50,7 @@ export class ProjectService {
     imageUrl: '/assets/img/mygarage.png',
     route: '/projects/mygarage', 
     gitHubUrl: 'https://github.com/AbbasEl11/mygarage-app',
-    liveTestUrl: 'http://abbas-el-mahmoud.com/mygarage-app/index.html',
+    liveTestUrl: 'https://abbas-el-mahmoud.com/mygarage-app/index.html',
     materials: [
       { name: 'Ionic', iconUrl: '/assets/icons/Ionic_Logo.svg' },
       { name: 'React', iconUrl: '/assets/icons/React.png' },
